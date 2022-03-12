@@ -213,7 +213,7 @@ input.input100 {
 }
 
 .m1-txt2 {
-  font-family: 'Roboto Mono';  
+  font-family: 'Roboto Mono';
   font-size: 12px;
   line-height: 1.5;
   color: #ff0000;
@@ -312,8 +312,20 @@ input.input100 {
 
 
 .img-profile {
-  border-radius: 50%;
+  width: 100%;
+  border-radius: 100%;
+  margin-left: auto;
+    margin-right: auto;
+    transform:translateY(-50%);
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    box-shadow: 0px 5px 50px 0px rgb(108, 68, 252), 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
+
 }
+@media screen and (max-width: 576px) {
+      width: 120px;
+      height: 120px;
 
 .bg-img {
 
@@ -377,15 +389,15 @@ input.input100 {
 }
 
 /*---------------------------------------------*/
-.parallax100 {
-
+.parallax {
+  min-height: 500px;
   background-attachment: fixed;
-  background-position: center 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (max-width: 992px) {
-  .parallax100 {
+@media (max-width: 960px) {
+  .parallax {
     background-attachment: inherit;
   }
 }
@@ -413,8 +425,9 @@ input.input100 {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.5);
 }
+
 
 .overlay1::after {
   content: "";

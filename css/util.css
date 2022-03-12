@@ -17,15 +17,37 @@ body, html {
 
 	height: 100%;
 	background-color: #fff;
+	position: relative;
+  overflow-x: hidden!important;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
+.gradient {
+  width: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 50px 20px;
+  padding-top: 100px;
+  display: flex;
+  background-image: linear-gradient(-20deg, #ff284680 0%, #6944ff80 100%);
+
+  display: flex;
+  background-image: linear-gradient(-20deg, #00FFFF60 0%, #6944ff60 100%);
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 100px;
+  }
+
+}
+
 /*---------------------------------------------*/
 a:focus {outline: none;}
-a {text-decoration: none;}
-a:hover {text-decoration: none;}
+a, a:hover {text-decoration: none;}
 
 /* ------------------------------------ */
 h1,h2,h3,h4,h5,h6,p {margin: 0px;}
@@ -2386,23 +2408,6 @@ iframe {border: none;}
 .op-10 {opacity: 1;}
 
 
-/*------------------------------------------------------------------
-[ Wrap Picture ]*/
-.wrap-pic-w img {width: 100%;}
-.wrap-pic-max-w img {max-width: 100%;}
-
-/* ------------------------------------ */
-.wrap-pic-h img {height: 100%;}
-.wrap-pic-max-h img {max-height: 100%;}
-
-/* ------------------------------------ */
-.wrap-pic-cir {
-	border-radius: 50%;
-	overflow: hidden;
-}
-.wrap-pic-cir img {
-	width: 100%;
-}
 
 /*------------------------------------------------------------------
 [  ]*/
