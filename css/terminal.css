@@ -48,6 +48,18 @@ body{
   border-bottom-right-radius: 5px;
 }
 
+.fakeScreen .user{
+  color: #00FF80;
+}
+.fakeScreen .command{
+  color: #0000FF;
+}
+.fakeScreen .argv{
+  color: #00FFFF;
+}
+}
+
+
 p {
   color:#FAFAFA;
   position: relative;
