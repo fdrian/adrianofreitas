@@ -1,0 +1,38 @@
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+
+  font-family:'Fira Mono', monospace;
+  font-size:0.5em;
+  text-align:left;
+  height:200px;
+  width:512px;
+  display:block;
+  position:static;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+.t-blue {
+  color: #5b57c8;
+}
+.t-green {
+  color: #00aa7f;
+}
+.t-fish {
+  color: #303030;
+}
