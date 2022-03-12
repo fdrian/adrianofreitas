@@ -3,27 +3,8 @@ ho
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf');
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/Poppins/Poppins-Bold.ttf');
-}
-
-@font-face {
-  font-family: Lato-Regular;
-  src: url('../fonts/Lato/Lato-Regular.ttf');
-}
-
-@font-face {
-  font-family: Lato-Bold;
-  src: url('../fonts/Lato/Lato-Bold.ttf');
-}
-
-@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 
 /*//////////////////////////////////////////////////////////////////
 [ RS PLUGIN ]*/
@@ -219,20 +200,20 @@ input.input100 {
 [ M-Text 16 - 25 ]*/
 
 .afreitas {
-  font-family: 'Fira Mono';
+  font-family: 'Roboto Mono';
   font-size: 24px;
   line-height: 1.0;
   color: #fafafa;
 }
 .m1-txt1 {
-  font-family: 'Fira Mono';
+  font-family: 'Roboto Mono';
   font-size: 12px;
   line-height: 1.5;
   color: #aaa;
 }
 
 .m1-txt2 {
-  font-family: 'Fira Mono';
+  font-family: 'Roboto Mono';  
   font-size: 12px;
   line-height: 1.5;
   color: #ff0000;
