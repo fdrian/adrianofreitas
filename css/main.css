@@ -286,35 +286,11 @@ input.input100 {
   min-height: 100vh;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Background Social Media]*/
-.bg0 {background-color: #fffafa;}
-.bg-green {background-color: #02b875;}
-.bg-green-dark {background-color: #00ab6b;}
-
-
-.bg-facebook:hover {background-color: #3b5998;}
-.bg-twitter:hover {background-color: #1da1f2;}
-.bg-twitch:hover {background-color: #6441a5;}
-.bg-youtube:hover {background-color: #cd201f;}
-.bg-github:hover {background-color: #BD2C00;}
-.bg-telegram:hover {background-color: #0088cc;}
-.bg-pinterest:hover {background-color: #bd081c;}
-.bg-reddit:hover {background-color: #ff4500;}
-.bg-spotify:hover {background-color: #1ed760;}
-.bg-discord:hover {background-color: #7289da;}
-.bg-lastfm:hover {background-color: #d92323;}
-.bg-steam:hover {background-color: #171a21;}
-.bg-instagram:hover {background-color: #fba441;}
-.bg-xbox:hover {background-color: #107C10;}
-
-
-
 .img-profile {
   width: 100%;
   border-radius: 100%;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
     transform:translateY(-50%);
     overflow: hidden;
     position: relative;
@@ -322,18 +298,50 @@ input.input100 {
     box-shadow: 0px 5px 50px 0px rgb(108, 68, 252), 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
 
 }
-@media screen and (max-width: 576px) {
-      width: 120px;
-      height: 120px;
 
 .bg-img {
-
   background-color: #0f0f0f;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+/*//////////////////////////////////////////////////////////////////
+[ Background Social Media]*/
+.icon-color {color:#fafafa;}
 
+
+
+.telegram,.facebook,.twitter,.twitch,.youtube,.github,.pinterest,
+.reddit,.spotify,.discord,.lastfm,.steam,.instagram,.xbox
+{
+  font-size: 3em;
+  border-radius: 100%;
+  position: relative;
+  color: #000;
+}
+
+
+
+
+.bg-telegram:hover {color: #0088cc;}
+.bg-facebook:hover {color: #3b5998;}
+.bg-twitter:hover {color: #1da1f2;}
+.bg-twitch:hover {color: #6441a5;}
+.bg-youtube:hover {color: #cd201f;}
+.bg-github:hover {color: #BD2C00;}
+.bg-pinterest:hover {color: #bd081c;}
+.bg-reddit:hover {color: #ff4500;}
+.bg-spotify:hover {color: #1ed760;}
+.bg-discord:hover {color: #7289da;}
+.bg-lastfm:hover {color: #d92323;}
+.bg-steam:hover {color: #171a21;}
+.bg-instagram:hover {color: #fba441;}
+.bg-xbox:hover {color: #107C10;}
+
+
+@media screen and (max-width: 576px) {
+      width: 120px;
+      height: 120px;
 
 
 
