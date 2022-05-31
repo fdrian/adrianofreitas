@@ -30,7 +30,7 @@ body{
   border-color: #049931;
 }
 .fakeMenu {
-  width: 550px;
+  width: 640px;
   box-sizing: border-box;
   height: 2em;
   background-color: #bbb;
@@ -39,25 +39,16 @@ body{
   border-top-left-radius: 5px;
 }
 .fakeScreen {
-  background-color: #111111aa;
+  background-color: #111111dd;
   box-sizing: border-box;
-  width: 550px;
-  height: 300px;
-  margin: 0.5em auto;
+  width: 640px;
+  height: 120px;
+  margin: 0.0em auto;
   padding: 1em;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.fakeScreen .user{
-  color: #00FF80;
-}
-.fakeScreen .command{
-  color: #0000FF;
-}
-.fakeScreen .argv{
-  color: #00FFFF;
-}
 }
 
 p {
