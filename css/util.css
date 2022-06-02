@@ -13,36 +13,52 @@
 body, html {
 	font-family: Arial, sans-serif;
 	font-size: 15px;
-	color: #666666;
-
+	color: #666;
 	height: 100%;
-	background-color: #fff;
+	background-color: #000;
 	position: relative;
   overflow-x: hidden!important;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.background {
+  margin: 0;
+  overflow: hidden;
+	z-index: 1;
 
-.gradient {
-  width: 100%;
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  padding: 50px 20px;
-  padding-top: 100px;
-  display: flex;
-  background-image: linear-gradient(-20deg, #ff284680 0%, #6944ff80 100%);
+}
+canvas{
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
 
-  display: flex;
-  background-image: linear-gradient(-20deg, #00FFFF60 0%, #6944ff60 100%);
-
-  @media screen and (max-width: 768px) {
-    height: auto;
-    min-height: 100vh;
-    padding-top: 100px;
-  }
-
+.profile{
+	background-color: black;
+	max-width 512px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 2rem;
+	position: relative;
+	z-index: 1;
+}
+.terminal{
+	position: relative;
+	z-index: 1;
+}
+.badge{
+	position: relative;
+	z-index: 1;
+}
+.advertising{
+	position: relative;
+	z-index: 1;
+}
+.social{
+	position: relative;
+	z-index: 1;
 }
 
 /*---------------------------------------------*/

@@ -310,7 +310,7 @@ input.input100 {
 .telegram,.facebook,.twitter,.twitch,.youtube,.github,.pinterest,
 .reddit,.spotify,.discord,.lastfm,.steam,.instagram,.xbox
 {
-  font-size: 3em;
+  font-size: 2rem;
   border-radius: 100%;
   position: relative;
   color: #000;
