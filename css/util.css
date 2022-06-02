@@ -36,7 +36,8 @@ canvas{
 
 .profile{
 	background-color: black;
-	max-width 512px;
+	width: 32em;
+	max-width 60em;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
@@ -45,6 +46,7 @@ canvas{
 	z-index: 1;
 }
 .terminal{
+	width: 48em;
 	position: relative;
 	z-index: 1;
 }
