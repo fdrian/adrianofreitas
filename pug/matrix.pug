@@ -1,0 +1,13 @@
+- var n = 0;
+- var i = 0;
+- var value;
+
+.wrapper
+  while n <= 80
+    div(class='column col-' + ++n)
+      - i = 0;
+      while i < 50
+        - ++i;
+        //- - value = Math.floor(Math.random() * 431) + 256;
+        - value = Math.floor(Math.random() * 255) + 10240;
+        span &##{value};
