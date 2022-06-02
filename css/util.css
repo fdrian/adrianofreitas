@@ -45,8 +45,7 @@ canvas{
 	position: relative;
 	z-index: 1;
 }
-.terminal{
-	width: 48em;
+.terminal{	
 	position: relative;
 	z-index: 1;
 }
