@@ -30,7 +30,7 @@ body{
   border-color: #049931;
 }
 .fakeMenu {
-  width: 640px;
+  width: 720px;
   box-sizing: border-box;
   height: 2em;
   background-color: #bbb;
@@ -41,7 +41,7 @@ body{
 .fakeScreen {
   background-color: #111111dd;
   box-sizing: border-box;
-  width: 640px;
+  width: 720px;
   height: 120px;
   margin: 0.0em auto;
   padding: 1em;

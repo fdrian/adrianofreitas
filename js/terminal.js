@@ -1,7 +1,7 @@
 
 
  var typing = new Typed (".animate",{
-      strings:['I want to write an online bio, but I can´t think of anything.','Hello World!','My blood is made of coffee.','Don’t follow me because I don’t even know where I’m going.', 'Are you a one or zero?'],
+      strings:['Hello World!','I want to write an online bio, but I can´t think of anything.','My blood is made of coffee.', 'Are you a one or zero?', 'Simple is better than complex.'],
       typeSpeed:120,
       backSpeed:70,
       loop:true,
