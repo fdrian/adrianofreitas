@@ -3,16 +3,17 @@ var canvas = document.querySelector('canvas'),
     ctx = canvas.getContext('2d');
 
 // Setting the width and height of the canvas
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-//canvas.height = 256;
+//canvas.width = window.innerWidth;
+//canvas.height = window.innerHeight;
+canvas.width = 1500;
+canvas.height = 500;
 
 // Setting up the letters
 var letters = '⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵⠼⠁⠼⠃⠼⠉⠼⠙⠼⠑⠼⠋⠼⠛⠼⠓⠼⠊⠼⠚';
 letters = letters.split('');
 
 // Setting up the columns
-var fontSize = 24,
+var fontSize = 42,
     columns = canvas.width / fontSize;
 
 // Setting up the drops

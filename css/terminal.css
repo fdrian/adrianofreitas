@@ -1,10 +1,5 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100&family=Space+Mono&display=swap');
-body{
-  background-color: #161a1d;
-  color:#fff;
-}
+
 
 .fakeButtons {
   height: 10px;
@@ -39,10 +34,10 @@ body{
   border-top-left-radius: 5px;
 }
 .fakeScreen {
-  background-color: #111111dd;
+  background-color: #010101AA;
   box-sizing: border-box;
   width: 42em;
-  height: 120px;
+  height: 4em;
   margin: 0.0em auto;
   padding: 1em;
   border-bottom-left-radius: 5px;
