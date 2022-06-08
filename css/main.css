@@ -196,15 +196,16 @@ input.input100 {
 [ Background Social Media]*/
 .icon-color {color:#fafafa;}
 
-.telegram,.facebook,.twitter,.twitch,.youtube,.github,.pinterest,
+.linkedin,.telegram,.facebook,.twitter,.twitch,.youtube,.github,.pinterest,
 .reddit,.spotify,.discord,.lastfm,.steam,.instagram,.xbox
 {
-  font-size: 2rem;
+  font-size: 1.6em;
   border-radius: 100%;
   position: relative;
   color: #000;
 }
 
+.bg-linkedin:hover {color: #0e76a8;}
 .bg-telegram:hover {color: #0088cc;}
 .bg-facebook:hover {color: #3b5998;}
 .bg-twitter:hover {color: #1da1f2;}
@@ -217,7 +218,7 @@ input.input100 {
 .bg-discord:hover {color: #7289da;}
 .bg-lastfm:hover {color: #d92323;}
 .bg-steam:hover {color: #171a21;}
-.bg-instagram:hover {color: #fba441;}
+.bg-instagram:hover {color: #3f729b;}
 .bg-xbox:hover {color: #107C10;}
 
 
