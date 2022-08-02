@@ -3,10 +3,8 @@ var canvas = document.querySelector('canvas'),
     ctx = canvas.getContext('2d');
 
 // Setting the width and height of the canvas
-//canvas.width = window.innerWidth;
-//canvas.height = window.innerHeight;
-canvas.width = 1500;
-canvas.height = 500;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 // Setting up the letters
 var letters = '⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵⠼⠁⠼⠃⠼⠉⠼⠙⠼⠑⠼⠋⠼⠛⠼⠓⠼⠊⠼⠚';
@@ -28,7 +26,7 @@ function draw() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   for (var i = 0; i < drops.length; i++) {
     var text = letters[Math.floor(Math.random() * letters.length)];
-    ctx.fillStyle = '#0f0';
+    ctx.fillStyle = '#6610f2';
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
     drops[i]++;
     if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
