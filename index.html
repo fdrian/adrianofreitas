@@ -6,6 +6,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Cache-control" content="public">
+
+	<meta name="twitter:dnt" content="on">
+	<meta name="twitter:widgets:csp" content="on">
+	<meta  name="twitter:widgets:border-color"  content="#6610f2">
+	<meta  name="twitter:widgets:theme"  content="dark">
+	<meta  name="twitter:widgets:autoload"  content="on">
+
+	<link  rel="me"  href="https://twitter.com/Drian0x01">
 	<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
@@ -15,8 +23,7 @@
 	<!--===============================================================================================-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<!-- Latest compiled JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>	
 	<!--===============================================================================================-->
 
 	<script src="https://kit.fontawesome.com/c40a60fd66.js" crossorigin="anonymous"></script>
@@ -24,24 +31,23 @@
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/terminal.css">
-	<link rel="stylesheet" type="text/css" href="css/matrix.css">
-
-
+	<link rel="stylesheet" type="text/css" href="css/terminal.css">	
+	<link rel="stylesheet" type="text/css" href="css/skills.css">
 
 	<!--===============================================================================================-->
 </head>
 <body>
+	<!-- Matrix -->
+	<div class="cover">
+		<canvas id="cover"></canvas>
+	</div>
 	<div class="container-fluid">
 
-		<!-- Picture -->
-		<div class="cover">
-			<canvas id="canvas" width="900" height="900"></canvas>
-		</div>
+		
 
-			<!-- Profile Picture -->
-			<div class="row">
-				<div class="col ">
+		<!-- Profile Picture -->
+		<div class="row">
+			<div class="col ">
 					<div class="card profile mx-auto d-block" >
 					  <img class="card-img-top" src="https://drian.io/gravatar" alt="Abandon hope all ye enter here!">
 					  <div class="card-img-overlay">
@@ -50,52 +56,84 @@
 							<h2 class="card-title">Adriano Freitas</h2>							
 							<!-- TryHackMe Badge -->
 							<div class="row"><div class="badge mx-auto d-block">
-							<script src="https://drian.io/thm"></script></div></div>
-
-							<pre><span class="animate"> </span> </pre>
-
-						</div>
-						
-						
-					</div>
-				</div>
-				<!-- Twitter Embed-->
-				<div class="col  ">					
-					<div class="card profile mx-auto d-block" >	
-						<a class="twitter-timeline" data-lang="en" data-width="320" data-height="480" data-dnt="true" data-theme="dark" href="https://twitter.com/Drian0x01/lists/1554571425603887111?ref_src=twsrc%5Etfw">A Twitter List by Drian0x01</a> 
-					</div>
-				</div>
-
-				<!-- Social Links -->
-				<div class="col  ">
-					<div class="card profile mx-auto d-block" >	
-						<div class="social">
-							<div class="p-4 bg-dark text-white text-center">
-								<!-- Social Icons -->
-								<div class="row">
-									<div class="col"><span class="linkedin"><a href="https://drian.io/linkedin" target="_blank"><i class="fa-brands fa-linkedin  icon-color bg-linkedin"></i></a></span></div>
-									<div class="col"><span class="github"><a href="https://drian.io/github" target="_blank"><i class="fa-brands fa-github  icon-color bg-github"></i></a></span></div>
-									<div class="col"><span class="twitter"><a href="https://drian.io/twitter" target="_blank"><i class="fa-brands fa-twitter  icon-color bg-twitter "></i></a></span></div>
-									<div class="col"><span class="reddit"><a href="https://drian.io/reddit" target="_blank"><i class="fa-brands fa-reddit  icon-color bg-reddit"></i></a></span></div>									
+							<script src="https://drian.io/thm"></script></div></div>		
+							<div class="social">
+								<div class="p-4 bg-dark text-white text-center">
+									<!-- Social Icons -->
+									<div class="row">									
+										<div class="col"><span class="linkedin"><a href="https://drian.io/linkedin" target="_blank"><i class="fa-brands fa-linkedin  icon-color bg-linkedin"></i></a></span></div>
+										<div class="col"><span class="github"><a href="https://drian.io/github" target="_blank"><i class="fa-brands fa-github  icon-color bg-github"></i></a></span></div>
+										<div class="col"><span class="twitter"><a href="https://drian.io/twitter" target="_blank"><i class="fa-brands fa-twitter  icon-color bg-twitter "></i></a></span></div>
+										<div class="col"><span class="reddit"><a href="https://drian.io/reddit" target="_blank"><i class="fa-brands fa-reddit  icon-color bg-reddit"></i></a></span></div>									
+									</div>
+									<div class="row">
+										<div class="col"><span class="telegram"><a href="https://drian.io/telegram" target="_blank"><i class="fa-brands fa-telegram   icon-color bg-telegram"></i></a></span></div>
+										<div class="col"><span class="lastfm"><a href="https://drian.io/lastfm" target="_blank"><i class="fa-brands fa-lastfm  icon-color bg-lastfm"></i></a></span></div>
+										<div class="col"><span class="twitch"><a href="https://drian.io/twitch" target="_blank"><i class="fa-brands fa-twitch  icon-color bg-twitch"></i></a></span></div>
+										<div class="col"><span class="instagram"><a href="https://drian.io/instagram" target="_blank"><i class="fa-brands fa-instagram  icon-color bg-instagram"></i></a></span></div>
+									</div>
 								</div>
-								<div class="row">
-									<div class="col"><span class="telegram"><a href="https://drian.io/telegram" target="_blank"><i class="fa-brands fa-telegram   icon-color bg-telegram"></i></a></span></div>
-									<div class="col"><span class="lastfm"><a href="https://drian.io/lastfm" target="_blank"><i class="fa-brands fa-lastfm  icon-color bg-lastfm"></i></a></span></div>
-									<div class="col"><span class="twitch"><a href="https://drian.io/twitch" target="_blank"><i class="fa-brands fa-twitch  icon-color bg-twitch"></i></a></span></div>
-									<div class="col"><span class="instagram"><a href="https://drian.io/instagram" target="_blank"><i class="fa-brands fa-instagram  icon-color bg-instagram"></i></a></span></div>
-								</div>
-							</div>
-						</div>												
+							</div>					
+						</div>						
+						
 					</div>
-				</div>   
-				</div>
-			</div>	
-			</div>
-	
+
+				</div>		
+		
+
+		
+
+		</div>				
 	</div>
 
+	</div>
+
+	<div class="row">
+		<!-- Skills -->
+		<div class="col">
+			<div class="chart bg-dark card profile mx-auto d-block ">
+				<canvas id="skillsHacker" width="400" height="400"></canvas>
+			</div>			
+		</div>
+		<div class="col">
+			<div class="chart bg-dark card profile mx-auto d-block ">
+				<canvas id="skillsDev" width="400" height="400"></canvas>
+			</div>			
+		</div>			  
+		<!-- Twitter Embed -->
+		<div class="col  ">					
+			<div class="card profile mx-auto d-block" >	
+				<a class="twitter-timeline" data-lang="en" data-width="300" data-height="300" data-dnt="true" data-theme="dark" href="https://twitter.com/Drian0x01/lists/1554571425603887111?ref_src=twsrc%5Etfw" data-chrome="nofooter noborders" data-tweet-limit="1" > A Twitter List by @Drian0x01</a> 						
+			</div>
+		</div>
+		<!-- Other Embed
+		<div class="col  ">					
+			<div class="card profile mx-auto d-block" >	
+				<a class="twitter-timeline" data-lang="en" data-width="720" data-height="480" data-dnt="true" data-theme="dark" href="https://twitter.com/Drian0x01/lists/1554571425603887111?ref_src=twsrc%5Etfw">A Twitter List by Drian0x01</a> 						
+			</div>
+		</div>-->
+		<!-- Linkedin Embed
+		<div class="col  ">					
+			<div class="card profile mx-auto d-block" >	
+				<div class="  badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="drian0x01" data-version="v1">
+					<a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/drian0x01?trk=profile-badge"></a>
+				</div>
+                 
+			</div>
+		</div>-->
+	</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://drian.io/lin" async defer type="text/javascript"></script>
 <script async src="https://drian.io/tco" charset="utf-8"></script>															
-<script type="text/javascript" src="js/terminal.js"></script>
 <script type="text/javascript" src="js/matrix.js"></script>
+<script type="text/javascript" src="js/hacker-chart.js"></script>
+<script type="text/javascript" src="js/developer-chart.js"></script>
 </body>
+<footer><pre><span class="animate"> </span> </pre></footer>
 </html>
+

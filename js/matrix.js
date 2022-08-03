@@ -1,17 +1,20 @@
 // Initialising the canvas
-var canvas = document.querySelector('canvas'),
+//var canvas = document.querySelector('canvas'),
+var canvas = document.getElementById('cover'),
+
     ctx = canvas.getContext('2d');
 
 // Setting the width and height of the canvas
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
+//canvas.width = window.innerWidth;
+//canvas.height = window.innerHeight;
+canvas.width = 1080;
+canvas.height = 960;
 // Setting up the letters
 var letters = '⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵⠼⠁⠼⠃⠼⠉⠼⠙⠼⠑⠼⠋⠼⠛⠼⠓⠼⠊⠼⠚';
 letters = letters.split('');
 
 // Setting up the columns
-var fontSize = 42,
+var fontSize = 12,    
     columns = canvas.width / fontSize;
 
 // Setting up the drops
