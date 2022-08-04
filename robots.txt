@@ -1,5 +1,3 @@
-Sitemap: https://adrianofreitas.me/site.webmanifest
-
 User-agent: *
 Disallow: /
 Disallow: /blog/
@@ -7,6 +5,13 @@ Disallow: /blacklist/
 Disallow: /wp-admin/
 Disallow: /templates/
 Disallow: /.*/
+
+User-agent: YandexBot
+Disallow: *
+
+User-agent: Googlebot
+Allow: /
+Allow: /README.md$
 
 User-agent: DuckDuckBot
 Allow: /
