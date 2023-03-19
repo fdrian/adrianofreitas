@@ -4915,7 +4915,9 @@
         opacity: .9
       }
     
-
+    .glyph-coffee:before {
+      content: "\2615"      
+    }
       
     .glyph-addon:before {
       content: "\e855"
