@@ -1,3 +1,10 @@
+.image {
+    background-image:url(../img/background.png);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    padding-bottom:66.66666666666667%
+}
 
       .glyph-addon:before {
         content: "\e855"
@@ -903,6 +910,10 @@
       }
 
       body {
+        
+        background-color: #ffd100;
+        background: -webkit-linear-gradient(15deg, #f26419 0%, #f9a71d 50%, #ffd100 100%) fixed;        
+        background: linear-gradient(15deg, #f26419 0%, #f9a71d 50%, #ffd100 100%) fixed;        
         font-family: hero-new, sans-serif;
         font-size: 14px;
         line-height: 1.3;
@@ -3238,6 +3249,7 @@
       }
 
       .profile.profile_view-scope-FLdZm .profile-content .body-content {
+        background-color: #171b21;
         padding: 30px 0 40px;
         display: -webkit-box;
         display: -webkit-flex;
@@ -3268,6 +3280,7 @@
 
       .profile.profile_view-scope-FLdZm .profile-content .name-headline section+section:not(:empty) {
         margin-top: 5px
+        
       }
 
       .profile.profile_view-scope-FLdZm .profile-content .image {
@@ -3448,32 +3461,46 @@
       }
 
       .profile.profile_view-scope-FLdZm .profile-content .spotlight .button {
-        min-width: 100%;
+        background-color:#2E3440;border-color:#2E3440;
+        min-width: 100%;        
         -webkit-transition: all .15s ease-out;
         transition: all .15s ease-out
       }
 
-      .profile.profile_view-scope-FLdZm .profile-content .spotlight .button.light {
-        color: #333;
+      .profile.profile_view-scope-FLdZm .profile-content .spotlight .button.light {        
+        color: #ECEFF4;
         -webkit-box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .025);
         box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .025)
       }
 
       .no-touchevents .profile.profile_view-scope-FLdZm .profile-content .spotlight .button.light:hover {
-        -webkit-box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .05);
-        box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .05);
-        border-color: rgba(0, 0, 0, .23)
+        background-color:#FCEC0C;border-color:#FCEC0C;
+        color: #2E3440;          
+        box-shadow: 0 0 .2rem #fff,
+                    0 0 .2rem #fff,
+                    0 0 1rem #FCEC0C,
+                    0 0 0.8rem #FCEC0C,
+                    0 0 1.8rem #FCEC0C,
+                    inset 0 0 1.3rem #FCEC0C;
       }
 
-      .profile.profile_view-scope-FLdZm .profile-content .spotlight .button.dark {
-        color: #fff;
+      .profile.profile_view-scope-FLdZm .profile-content .spotlight .button.dark {        
+        color: #ECEFF4;
         -webkit-box-shadow: inset 0 0 0 100px hsla(0, 0%, 100%, 0);
-        box-shadow: inset 0 0 0 100px hsla(0, 0%, 100%, 0)
+        box-shadow: inset 0 0 0 100px hsla(0, 0%, 100%, 0);      
+        
       }
 
       .no-touchevents .profile.profile_view-scope-FLdZm .profile-content .spotlight .button.dark:hover {
-        -webkit-box-shadow: inset 0 0 0 100px hsla(0, 0%, 100%, .1);
-        box-shadow: inset 0 0 0 100px hsla(0, 0%, 100%, .1)
+        background-color:#FCEC0C;border-color:#FCEC0C;
+        color: #2E3440;
+                
+        box-shadow: 0 0 .2rem #fff,
+                    0 0 .2rem #fff,
+                    0 0 1rem #FCEC0C,
+                    0 0 0.8rem #FCEC0C,
+                    0 0 1.8rem #FCEC0C,
+                    inset 0 0 1.3rem #FCEC0C;
       }
 
       .profile.profile_view-scope-FLdZm .profile-content .spotlight .button .text.ellipsis {
@@ -3598,9 +3625,13 @@
       }
 
       .profile.profile_view-scope-FLdZm .profile-content .social-links li svg {
-        fill: #2E3440;
+        fill: #fcec0c;
         height: 100%;
         width: 100%
+      }
+      .profile.profile_view-scope-FLdZm .profile-content .social-links li svg:hover {
+        fill: #35f8ee;
+        
       }
 
       .profile.profile_view-scope-FLdZm .profile-content .social-links li.contact-me {
@@ -3625,7 +3656,7 @@
         will-change: opacity
       }
 
-      .no-touchevents .profile.profile_view-scope-FLdZm .profile-content .social-links li:hover {
+      .no-touchevents .profile.profile_view-scope-FLdZm .profile-content .social-links li:hover {        
         opacity: .8
       }
 
@@ -3634,8 +3665,17 @@
         text-transform: uppercase;
         font-weight: 200;
         letter-spacing: 2px;
-        color: #5E81AC;
+        color: #ECEFF4;
         margin-bottom: 5px
+      }
+      .profile.profile_view-scope-FLdZm .profile-content .meta-item {
+        text-transform: uppercase;
+        color: #35f8ee;
+        text-shadow:
+        0 0 4px #35f8ee,        
+        0 0 64px #35f8ee;
+
+
       }
 
       .profile.profile_view-scope-FLdZm .profile-content ul.inline {
@@ -4016,7 +4056,8 @@
 
       .profile.profile_view-scope-FLdZm.medium .head .name-headline .headline,
       .profile.profile_view-scope-FLdZm.medium .head .name-headline .name {
-        color: #fff
+        color: #ECEFF4;
+          
       }
 
       .profile.profile_view-scope-FLdZm.medium .body {
@@ -4029,7 +4070,7 @@
 
       .profile.profile_view-scope-FLdZm.large {
         padding: 0;
-        background-color: #fff
+        background-color: #ECEFF4
       }
 
       .profile.profile_view-scope-FLdZm.large.has-nav {
