@@ -1,3 +1,3 @@
-# Drian - Portfolio
-## Community Manager @ Pato Academy
-
+# Adriano Freitas
+# @xfdrian
+I'm Community Manager @ Pato Academy
