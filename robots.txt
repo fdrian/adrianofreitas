@@ -15,3 +15,9 @@ Allow: /README.md$
 
 User-agent: DuckDuckBot
 Allow: /
+
+User-agent: bingbot
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
