@@ -14,7 +14,7 @@ COPY --chown=nginx:nginx . .
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Expõe a porta 80
-EXPOSE 80
+EXPOSE 8081
 
 # Inicia o servidor NGINX
 CMD ["nginx", "-g", "daemon off;"]
