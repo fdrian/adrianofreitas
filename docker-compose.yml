@@ -6,7 +6,7 @@ services:
     container_name: drian
     restart: unless-stopped
     ports:
-      - "8081:80"
+      - "8081:8081"
     networks:
       - proxy
 
