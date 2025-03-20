@@ -1,17 +1,10 @@
 User-agent: *
-Disallow: /
-Disallow: /blog/
-Disallow: /blacklist/
-Disallow: /wp-admin/
-Disallow: /templates/
-Disallow: /.*/
-
-User-agent: YandexBot
-Disallow: *
+Disallow: /.well-known/  # Geralmente contém arquivos sensíveis como certificados ACME
+Disallow: /images/favicon/  # Favicons não precisam ser indexados separadamente
+Disallow: /images/icons/  # Ícones normalmente são recursos e não páginas indexáveis
 
 User-agent: Googlebot
 Allow: /
-Allow: /README.md$
 
 User-agent: DuckDuckBot
 Allow: /
@@ -19,5 +12,11 @@ Allow: /
 User-agent: bingbot
 Disallow: /
 
+User-agent: YandexBot
+Disallow: /
+
 User-agent: archive.org_bot
 Disallow: /
+
+Sitemap: https://seudominio.com/sitemap.xml
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Página principal -->
+    <url>
+        <loc>https://adrianofreitas.me/</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Diretórios importantes -->
+    <url>
+        <loc>https://adrianofreitas.me/css/</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://adrianofreitas.me/js/</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://adrianofreitas.me/images/</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+</urlset>
