@@ -8,11 +8,11 @@
 }
 ::-webkit-scrollbar{
     width: 4px;
-    color:#8839ef;
+    color:#8826f9;
     transition: all .4s ease;
 }
 ::-webkit-scrollbar-thumb {
-    background: #8839ef; 
+    background: #8826f9; 
     border-radius: 4px;
     width: 4px;
     transition: all .4s ease;
@@ -46,7 +46,7 @@ input[type=number] {
       z-index:100;
       font-family: Russo One;
       background-color: #202020;
-      color: whitesmoke;
+      color: #dce0e8;
       font-size: 70px;
       width: 100%;
   }
@@ -124,7 +124,7 @@ body{
     width: 50%;
     top:0;
     right:0;
-    background-color:whitesmoke;
+    background-color:#dce0e8;
     transition: all .5s ease;
 
 }
@@ -138,7 +138,7 @@ body{
     width: 75%;
     top:0;
     right:0;
-    background-color:whitesmoke;
+    background-color:#dce0e8;
     transition: all .3s ease;
 }
 .menubar .third-span{
@@ -151,7 +151,7 @@ body{
     width: 100%;
     top:0;
     right:0;
-    background-color:whitesmoke;
+    background-color:#dce0e8;
     transition: all .3s ease;
 }
 .menubar:hover .second-span::before , .menubar:hover .first-span::before {
@@ -163,7 +163,7 @@ body{
 .close-first , .close-second{
  height: 2px;
  width: 35px;
- background-color: whitesmoke;
+ background-color: #dce0e8;
  display: block;
  margin: 4px;
  cursor: pointer;
@@ -237,7 +237,7 @@ body{
     position: absolute;
     align-items: center;
     justify-content: center;
-    color: whitesmoke;
+    color: #dce0e8;
     font-family: Share Tech Mono;
     font-weight: 400;
     letter-spacing: 1px;
@@ -385,7 +385,7 @@ body{
 #breaker{
     height: 100vh;
     width: 200%;
-    background-color: #8839ef;
+    background-color: #8826f9;
     opacity: 1;
     animation: breakeranimate 2s linear;
     display: none;
@@ -405,7 +405,7 @@ body{
     100%{ transform : translateX(100%) }
 }
 .color{
-    color: #8839ef;
+    color: #8826f9;
     transition: all .4s ease;
 }
 #about{
@@ -435,7 +435,7 @@ body{
     display: flex;
     flex-direction:column;
     align-items: center;
-    color: whitesmoke;
+    color: #dce0e8;
     justify-content: center;
     height: auto;
     width: 100%;
@@ -449,14 +449,14 @@ body{
     justify-content: center;
     font-size: 45px;
     font-family: Share Tech Mono;
-    color: whitesmoke;
+    color: #dce0e8;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 60px;
     font-weight: 900;
 }
 .about-first-paragraph{
-    color: whitesmoke;
+    color: #dce0e8;
     justify-content: center;
     font-size: 20px;
     font-family: Russo One;
@@ -507,7 +507,7 @@ body{
     font-family: aileron;
     font-weight: 400;
     font-size: 35px;
-    color: #8839ef;
+    color: #8826f9;
     transition: all .4s ease;
 }
 .cv {
@@ -517,8 +517,8 @@ body{
     background: transparent;
     border:none;
     padding: 15px 30px;
-    color: whitesmoke;
-    background: #8839ef;
+    color: #dce0e8;
+    background: #8826f9;
     outline: none;
     font-size:20px;
     font-family: aileron;
@@ -545,7 +545,7 @@ body{
     justify-content: center;
     font-size: 45px;
     font-family: Share Tech Mono;
-    color: whitesmoke;
+    color: #dce0e8;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -559,7 +559,7 @@ body{
     flex-direction:column ;
 }
 .colors{
-    color: whitesmoke;
+    color: #dce0e8;
 }
 .services-content{
     height: auto;
@@ -594,18 +594,18 @@ body{
     margin: 20px;
     border-radius: 30%;
     padding: 10px;
-    border: 0px solid #8839ef;
-    background: #8839ef;
-    box-shadow:0px 0px 0px 0px #8839ef ;
+    border: 0px solid #8826f9;
+    background: #8826f9;
+    box-shadow:0px 0px 0px 0px #8826f9 ;
     height:100px;
     transition: all .8s ease;
 }
 .service:hover .service-img img{
-    box-shadow:0px 0px 0px 400px #8839ef ;
+    box-shadow:0px 0px 0px 400px #8826f9 ;
 }
 .service-description{
     font-family: Russo One;
-    color:whitesmoke;
+    color:#dce0e8;
     position: relative;
     display: inline-block;
     z-index:2;
@@ -634,7 +634,7 @@ body{
     justify-content: center;
     font-size: 45px;
     font-family: Share Tech Mono;
-    color: whitesmoke;
+    color: #dce0e8;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -652,7 +652,7 @@ body{
     padding: 0%;
     position: relative;
     font-family: Russo One;
-    color:whitesmoke;
+    color:#dce0e8;
     display: inline-block;
     padding:1.5%;
 }
@@ -687,7 +687,7 @@ body{
     transition: all .4s ease;
     width:95%;
     border-radius: 10px;
-    background: #8839ef;
+    background: #8826f9;
 }
 .js-progress{
     position: absolute;
@@ -701,7 +701,7 @@ body{
     transition: all .4s ease;
     width:90%;
     border-radius: 10px;
-    background: #8839ef;
+    background: #8826f9;
 }
 .adobe-progress{
     position: absolute;
@@ -714,7 +714,7 @@ body{
     transition: all .4s ease;
     width:83%;
     border-radius: 10px;
-    background: #8839ef;
+    background: #8826f9;
 }
 .php-progress{
     position: absolute;
@@ -726,7 +726,7 @@ body{
     justify-content: center;
     width:85%;
     border-radius: 10px;
-    background: #8839ef;
+    background: #8826f9;
     transition: all .4s ease;
 }
 .jquery-progress{
@@ -740,7 +740,7 @@ body{
     transition: all .4s ease;
     width:94%;
     border-radius: 10px;
-    background: #8839ef;
+    background: #8826f9;
 }
 .seo-progress{
     position: absolute;
@@ -753,7 +753,7 @@ body{
     width:84%;
     border-radius: 10px;
     transition: all .4s ease;
-    background: #8839ef;
+    background: #8826f9;
 }
 .portfolio-header{
     height: auto;
@@ -764,7 +764,7 @@ body{
     font-size: 45px;
     font-family: Share Tech Mono;
     transition: all .4s ease;
-    color: whitesmoke;
+    color: #dce0e8;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 60px;
@@ -778,7 +778,7 @@ body{
     font-family: Share Tech Mono;
     padding: 8px;
     padding-top: 15px;
-    color: whitesmoke;
+    color: #dce0e8;
     font-weight: 400;
 }
 .portfolio{
@@ -795,6 +795,7 @@ padding-bottom: 40px;
 }
 
 .portfolio-text{
+    color: #cdd6f4;
     width: 40%;
     padding-left: 1%;
     margin: 1%;
@@ -802,17 +803,18 @@ padding-bottom: 40px;
     margin-top: 160px;
     z-index: 3;
     opacity: 1;
-    background: #080808;
+    background: #11111b;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 
 .portfolio-text h2{
     font-size: 35px;
     font-family: Russo One;
     font-weight: 200;
     padding: 20px;
-    color: #8839ef;
+    color: #8826f9;
     transition: all .4s ease;
 }
 .portfolio-text p{
@@ -829,11 +831,11 @@ padding-bottom: 40px;
     font-weight: 200;
     padding: 10px 20px;
     background:transparent;
-    color:#8839ef;
+    color:#8826f9;
     transition: all .4s ease;
     outline: none;
     margin: 20px;
-    border: 1.5px solid #8839ef;
+    border: 1.5px solid #8826f9;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -848,12 +850,12 @@ padding-bottom: 40px;
     top: 0;
     left: 0;
     z-index: 3;
-    background: #8839ef;
+    background: #8826f9;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{
     opacity: 1;
-    color:whitesmoke;
+    color:#dce0e8;
 }
  button:hover .index{
      position: relative;
@@ -879,7 +881,7 @@ padding-bottom: 40px;
     content: "";
     height: 100%;
     width: 100%;
-    background: #8839ef;
+    background: #8826f9;
     opacity: .1;
     top: 0;
     left: 0;
@@ -901,7 +903,7 @@ padding-bottom: 40px;
     overflow-x: hidden;
     background-color: #11111b;
     width: 100%;
-    color:whitesmoke;
+    color:#dce0e8;
 }
 .blog-header{
     height: auto;
@@ -911,7 +913,7 @@ padding-bottom: 40px;
     justify-content: center;
     font-size: 45px;
     font-family: Share Tech Mono;
-    color: whitesmoke;
+    color: #dce0e8;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 60px;
@@ -922,7 +924,7 @@ padding-bottom: 40px;
     width: 50px;
     display: block;
     border-radius: 50%;
-    border: 1px solid whitesmoke;
+    border: 1px solid #dce0e8;
     background: transparent;
     pointer-events: none;
     position: fixed;
@@ -937,7 +939,7 @@ padding-bottom: 40px;
     width: 50px;
     display: block;
     border-radius: 50%;
-    border: 1px solid whitesmoke;
+    border: 1px solid #dce0e8;
     background: transparent;
     pointer-events: none;
     position: fixed;
@@ -951,7 +953,7 @@ padding-bottom: 40px;
 #blog{
     background: #11111b;
     display: none;
-    color:whitesmoke;
+    color:#dce0e8;
     width: 100%;
     height: auto;
 }
@@ -980,8 +982,8 @@ padding-bottom: 40px;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #8839ef;
-    color: whitesmoke;
+    background: #8826f9;
+    color: #dce0e8;
     font-size: 18px;
     text-align: center;
     font-weight: 400;
@@ -1002,7 +1004,7 @@ padding-bottom: 40px;
   text-align: center;
   vertical-align: center;
   font-family: Russo One;
-  color: whitesmoke;
+  color: #dce0e8;
   background-color: #050505;
   transition: all .5s ease;
 }
@@ -1029,7 +1031,7 @@ padding-bottom: 40px;
 }
 .blogs a{
     text-decoration: none;
-    color: whitesmoke;
+    color: #dce0e8;
 }
 #contact{
     display: none;
@@ -1047,7 +1049,7 @@ padding-bottom: 40px;
     justify-content: center;
     font-size: 45px;
     font-family: Share Tech Mono;
-    color: whitesmoke;
+    color: #dce0e8;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 60px;
@@ -1055,7 +1057,7 @@ padding-bottom: 40px;
 }
 .contact-header-caption{
     padding: 10px;
-    color: whitesmoke;
+    color: #dce0e8;
     opacity: .9;
     font-family:Share Tech Mono;
     font-size: 18px;
@@ -1122,7 +1124,7 @@ form{
     outline: none;
     background: #050505;
     border:none;
-    color: whitesmoke;
+    color: #dce0e8;
     font-family: Russo One;
     font-size: 18px;
 }
@@ -1130,7 +1132,7 @@ form{
     font-size: 24px;
     font-family: Russo One;
     font-weight: 400;
-    color: whitesmoke;
+    color: #dce0e8;
     padding: 28px;
 }
 .input-subject{
@@ -1141,7 +1143,7 @@ form{
     outline: none;
     background: #050505;
     border:none;
-    color: whitesmoke;
+    color: #dce0e8;
     font-family: Russo One;
     font-size: 18px;
 }
@@ -1154,7 +1156,7 @@ form{
     outline: none;
     background: #050505;
     border:none;
-    color: whitesmoke;
+    color: #dce0e8;
     font-family: Russo One;
     font-size: 18px;
 }
@@ -1162,7 +1164,7 @@ form button{
     padding:8px 24px;
     font-family: Russo One;
     font-size:20px;
-    color: whitesmoke;
+    color: #dce0e8;
     background:#BB0035;
     opacity: .8;
     margin: 20px;
@@ -1180,7 +1182,7 @@ form button:hover{
     font-size: 24px;
     font-family: Russo One;
     font-weight: 400;
-    color: whitesmoke;
+    color: #dce0e8;
     padding: 30px;
 }
 .contect-info-content-line{
@@ -1195,7 +1197,7 @@ form button:hover{
     margin-left: 100px;
 }
 .contact-info-icon-text{
-    color: whitesmoke;
+    color: #dce0e8;
     padding:15px;
     font-family: Russo One;
 }
@@ -1213,10 +1215,10 @@ form button:hover{
 }
 
 .footer{
-    background: #080808;
+    background: #11111b;
     width: 100%;
     padding: 20px;
-    color: whitesmoke;
+    color: #dce0e8;
     display: flex;
     flex-direction: row;
     font-family: Russo One;
@@ -1255,7 +1257,7 @@ form button:hover{
     justify-content: center;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
-    background: whitesmoke;
+    background: #dce0e8;
 }
 .color-panel img{
     height: 40px; 
@@ -1291,7 +1293,7 @@ form button:hover{
     background: #d20f39;
 }
 .color-purple{
-    background: #8839ef;
+    background: #8826f9;
 }
 .color-green{
     background: #40a02b;
@@ -1325,7 +1327,7 @@ form button:hover{
     height:auto;
     width:150px;
     padding: 10px;
-    background: whitesmoke;
+    background: #dce0e8;
     font-family: Russo One;
     font-size: 16px;
     display: flex;
@@ -1358,7 +1360,7 @@ For devices with smaller width like mobile phone
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        color: whitesmoke;
+        color: #dce0e8;
         font-family: Share Tech Mono;
         font-weight: 500;
         letter-spacing: 2px;
@@ -1395,7 +1397,7 @@ For devices with smaller width like mobile phone
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #8839ef;
+        background-color: #8826f9;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -1425,14 +1427,14 @@ For devices with smaller width like mobile phone
         display: flex;
         flex-direction:column;
         align-items: center;
-        color: whitesmoke;
+        color: #dce0e8;
         justify-content: center;
         height: auto;
         width: 100%;
         padding:30px;
     }
     .about-header{
-        color: whitesmoke;
+        color: #dce0e8;
 
         justify-content: center;
         font-size: 35px;
@@ -1441,7 +1443,7 @@ For devices with smaller width like mobile phone
         font-weight: 900;
     }
     .about-first-paragraph{
-        color: whitesmoke;
+        color: #dce0e8;
         justify-content: center;
         font-size: 20px;
         font-family: Russo One;
@@ -1563,7 +1565,7 @@ For devices with smaller width like mobile phone
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #8839ef ;
+                box-shadow:0px 0px 0px 0px #8826f9 ;
             }
             .portfolio-image img{
                 height: 300px;
@@ -1601,7 +1603,7 @@ For devices with smaller width like mobile phone
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                color: whitesmoke;
+                color: #dce0e8;
                 font-size: 18px;
                 text-align: center;
                 font-weight: 400;
@@ -1621,7 +1623,7 @@ For devices with smaller width like mobile phone
               text-align: center;
               vertical-align: center;
               font-family: Russo One;
-              color: whitesmoke;
+              color: #dce0e8;
               background-color: #000000;
               transition: all .5s ease;
             }
@@ -1708,7 +1710,7 @@ For devices with smaller width like mobile phone
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #dce0e8;
                 font-family: Russo One;
                 font-size: 16px;
             }
@@ -1716,7 +1718,7 @@ For devices with smaller width like mobile phone
                 font-size: 22px;
                 font-family: Russo One;
                 font-weight: 400;
-                color: whitesmoke;
+                color: #dce0e8;
                 padding: 20px;
                 padding-top: 0px;
             }
@@ -1728,7 +1730,7 @@ For devices with smaller width like mobile phone
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #dce0e8;
                 font-family: Russo One;
                 font-size: 16px;
             }
@@ -1741,7 +1743,7 @@ For devices with smaller width like mobile phone
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #dce0e8;
                 font-family: Russo One;
                 font-size: 16px;
             }
@@ -1749,7 +1751,7 @@ For devices with smaller width like mobile phone
                 padding:8px 24px;
                 font-family: Russo One;
                 font-size:20px;
-                color: whitesmoke;
+                color: #dce0e8;
                 opacity: .8;
                 margin: 20px;
                 cursor: pointer;
@@ -1766,7 +1768,7 @@ For devices with smaller width like mobile phone
                 font-size: 24px;
                 font-family: Russo One;
                 font-weight: 400;
-                color: whitesmoke;
+                color: #dce0e8;
                 padding: 20px;
             }
             .contect-info-content-line{
@@ -1781,7 +1783,7 @@ For devices with smaller width like mobile phone
                 margin-left: 5%;
             }
             .contact-info-icon-text{
-                color: whitesmoke;
+                color: #dce0e8;
                 padding:15px;
                 font-family: Russo One;
             }
@@ -1816,7 +1818,7 @@ for tabs and large phones
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        color: whitesmoke;
+        color: #dce0e8;
         font-family: Share Tech Mono;
         font-weight: 500;
         letter-spacing: 2px;
@@ -1850,7 +1852,7 @@ for tabs and large phones
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #8839ef;
+        background-color: #8826f9;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -1880,14 +1882,14 @@ for tabs and large phones
         display: flex;
         flex-direction:column;
         align-items: center;
-        color: whitesmoke;
+        color: #dce0e8;
         justify-content: center;
         height: auto;
         width: 100%;
         padding:10px;
     }
     .about-header{
-        color: whitesmoke;
+        color: #dce0e8;
         justify-content: center;
         font-size: 45px;
         font-family: Share Tech Mono;
@@ -1895,7 +1897,7 @@ for tabs and large phones
         font-weight: 900;
     }
     .about-first-paragraph{
-        color: whitesmoke;
+        color: #dce0e8;
         justify-content: center;
         font-size: 40px;
         font-family: Russo One;
@@ -1942,7 +1944,7 @@ for tabs and large phones
     .cv a button{
         border:none;
         padding: 20px 30px;
-        color: whitesmoke;
+        color: #dce0e8;
         outline: none;
         font-size:20px;
         font-family: aileron;
@@ -2010,7 +2012,7 @@ for tabs and large phones
         margin-left: 0px;
         margin-top: 0px;
         z-index: 1;
-        background: #080808;
+        background: #11111b;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -2034,7 +2036,7 @@ for tabs and large phones
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #8839ef ;
+                box-shadow:0px 0px 0px 0px #8826f9 ;
             }
             .portfolio-image img{
                 height: 380px;
@@ -2072,7 +2074,7 @@ for tabs and large phones
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                color: whitesmoke;
+                color: #dce0e8;
                 font-size: 18px;
                 text-align: center;
                 font-weight: 400;
@@ -2092,7 +2094,7 @@ for tabs and large phones
               text-align: center;
               vertical-align: center;
               font-family: Russo One;
-              color: whitesmoke;
+              color: #dce0e8;
               background-color: #050505;
               padding: 10px;
               transition: all .5s ease;
@@ -2180,7 +2182,7 @@ for tabs and large phones
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #dce0e8;
                 font-family: Russo One;
                 font-size: 16px;
             }
@@ -2188,7 +2190,7 @@ for tabs and large phones
                 font-size: 22px;
                 font-family: Russo One;
                 font-weight: 400;
-                color: whitesmoke;
+                color: #dce0e8;
                 padding: 20px;
                 padding-top: 0px;
             }
@@ -2200,7 +2202,7 @@ for tabs and large phones
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #dce0e8;
                 font-family: Russo One;
                 font-size: 16px;
             }
@@ -2213,7 +2215,7 @@ for tabs and large phones
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #dce0e8;
                 font-family: Russo One;
                 font-size: 16px;
             }
@@ -2221,7 +2223,7 @@ for tabs and large phones
                 padding:8px 24px;
                 font-family: Russo One;
                 font-size:20px;
-                color: whitesmoke;
+                color: #dce0e8;
                 opacity: .8;
                 margin: 20px;
                 cursor: pointer;
@@ -2238,7 +2240,7 @@ for tabs and large phones
                 font-size: 24px;
                 font-family: Russo One;
                 font-weight: 400;
-                color: whitesmoke;
+                color: #dce0e8;
                 padding: 20px;
             }
             .contect-info-content-line{
@@ -2308,7 +2310,7 @@ for tabs and large phones
         background: transparent;
         border:none;
         padding: 25px 35px;
-        color: whitesmoke;
+        color: #dce0e8;
         outline: none;
         font-size:30px;
         font-family: aileron;
@@ -2380,7 +2382,7 @@ for tabs and large phones
         position: absolute;
         left: 0;
         bottom: 0;
-        color: whitesmoke;
+        color: #dce0e8;
         font-size: 18px;
         text-align: center;
         font-weight: 400;
@@ -2400,7 +2402,7 @@ for tabs and large phones
       text-align: center;
       vertical-align: center;
       font-family: Russo One;
-      color: whitesmoke;
+      color: #dce0e8;
       background-color: #050505;
       transition: all .5s ease;
     }
@@ -2433,7 +2435,7 @@ for tabs and large phones
         justify-content: center;
         font-size: 45px;
         font-family: Share Tech Mono;
-        color: whitesmoke;
+        color: #dce0e8;
         padding:10px;
         padding-bottom: 30px;
         padding-top: 60px;
@@ -2441,7 +2443,7 @@ for tabs and large phones
     }
     .contact-header-caption{
         padding: 10px;
-        color: whitesmoke;
+        color: #dce0e8;
         opacity: .9;
         font-family:Share Tech Mono;
         font-size: 18px;
@@ -2506,7 +2508,7 @@ for tabs and large phones
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #dce0e8;
         font-family: Russo One;
         font-size: 18px;
     }
@@ -2514,7 +2516,7 @@ for tabs and large phones
         font-size: 24px;
         font-family: Russo One;
         font-weight: 400;
-        color: whitesmoke;
+        color: #dce0e8;
         padding: 20px;
         padding-top: 0px;
     }
@@ -2526,7 +2528,7 @@ for tabs and large phones
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #dce0e8;
         font-family: Russo One;
         font-size: 18px;
     }
@@ -2539,7 +2541,7 @@ for tabs and large phones
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #dce0e8;
         font-family: Russo One;
         font-size: 18px;
     }
@@ -2547,7 +2549,7 @@ for tabs and large phones
         padding:8px 24px;
         font-family: Russo One;
         font-size:20px;
-        color: whitesmoke;
+        color: #dce0e8;
         opacity: .8;
         margin: 20px;
         cursor: pointer;

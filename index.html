@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adriano Freitas (Drian) - Community Manager @ Pato Academy" />
-	<meta name="keywords" content="hacker, bug bounty, community manager, pato academy, gabriel pato, blog, business card, linux, shell script, python, cybersec, creative, portfolio, online resume, personal, portfolio, responsive portfolio, resume, resume , vcard" />
+    <meta name="description" content="Adriano Freitas (Drian) - Bug Hunter e Community Manager @ Pato Academy. Especialista em segurança cibernética com mais de 3 anos de experiência." />
+    <meta name="keywords" content="hacker, bug bounty, community manager, pato academy, gabriel pato, blog, business card, linux, shell script, python, cybersec, creative, portfolio, online resume, personal, portfolio, responsive portfolio, resume, resume, vcard, base64, jwt" />
+    <meta name="author" content="Adriano Freitas" />
     <title>Adriano Freitas (Drian) - Community Manager @ Pato Academy</title>
 
     <meta property="og:title" content="Adriano Freitas (@Drian)">
@@ -24,7 +25,7 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, minimum-scale=1">
     <meta http-equiv="cleartype" content="on">
-    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="msapplication-TileColor" content="#cdd6f4">
     <meta name="msapplication-TileImage" content="../images/favicon/android-chrome-192x192.png">
     <meta name="msapplication-square70x70logo" content="../images/favicon/android-chrome-192x192.png">
     <meta name="msapplication-square150x150logo" content="../images/favicon/android-chrome-192x192.png">
@@ -36,17 +37,53 @@
     <meta name="twitter:url" content="https://adrianofreitas.me">
     <meta name="twitter:title" content="Adriano Freitas (@xfdrian) - Bug Hunter">
     <meta name="twitter:description" content="Drian - Bug Hunter, Community Manager @ Pato Academy. Learn about bug bounty, hacking, cybersecurity, and my journey in the field.">
-    <meta name="twitter:image" content="https://adrianofreitas.me/src/img/background.png">
+    <meta name="twitter:image" content="https://adrianofreitas.me/images/background.png">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
 
 
-  <!--favicon-img--> 
-   <link rel="icon" type="image/png" href="images/favicon/favicon.ico">
-   <!--favicon-img-->
-   <!--main css file should not be removed -->
+    <!--favicon-img-->
+    <link rel="icon" type="image/png" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!--favicon-img-->
+    
+    <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
     <!--main css file-->
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" as="script">
+    <link rel="preload" href="js/particles.min.js" as="script">
+    <link rel="preload" href="images/about.png" as="image">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Adriano Freitas",
+      "alternateName": "Drian",
+      "url": "https://adrianofreitas.me",
+      "image": "https://adrianofreitas.me/images/about.png",
+      "jobTitle": "Community Manager",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Pato Academy"
+      },
+      "description": "Bug Hunter e Community Manager com mais de 3 anos de experiência",
+      "sameAs": [
+        "https://github.com/fdrian",
+        "https://linkedin.com/in/fdrian",
+        "https://twitter.com/xfdrian",
+        "https://instagram.com/xfdrian"
+      ],
+      "knowsAbout": ["Bug Bounty", "Cybersecurity", "Community Management", "Linux", "Python"]
+    }
+    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
 <body>
@@ -69,8 +106,8 @@
         <!--Main-Section-->
         <!--Navigator-fullscreen-->
         <div id="navigation-content">
-            <div class="logo">
-                <img src="images/logo.png" alt="logo">
+            <div class="logo">                
+                <img src="images/logo.png" alt="Adriano Freitas Logo" height="16" >
             </div>
             <div class="navigation-close">
                 <span class="close-first"></span>
@@ -81,6 +118,7 @@
                 <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
                 <a href="#" data-text="BLOG" id="blog-link" >BLOG</a>
                 <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
+                <a href="#" data-text="TOOLS" id="tools-link" >TOOLS</a>
                 <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
             </div>
         </div>
@@ -88,7 +126,7 @@
           <!--Home Page-->
         <!--Menubar-->
         <div id="navigation-bar">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.png" alt="Adriano Freitas Logo" height="16" >
             <div class="menubar">
                 <span class="first-span"></span>
                 <span class="second-span"></span>
@@ -110,15 +148,15 @@
             <!--Social Media Links end-->
             <div class="header-content">
                 <div class="header-content-box">
-                <div class="firstline"><span class="color">Adriano </span>Freitas</div>
+                <div class="firstline"><span class="color">Drian </span>Freitas</div>
                 <div class="secondline">
                 I'm a
-            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Hacker.", " Community Manager.", " Freelancer." ]'></span>
+            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Community Manager.", " Investigator.", " Hacker.", " Freelancer." ]'></span>
             <span class="slash">|</span>
         </div>
                     <div class="contact">
-                <a href="Mailto:info@adrianofreitas.me"><img src="images/icons/mail.png" alt="email-pic" class="contactpic"></a>
-                <a href="https://wa.me/5592999999999" target="_blank"><img src="images/icons/call.png" alt="phone-pic" class="contactpic"></a>
+                <a href="Mailto:info@adrianofreitas.me" aria-label="Email"><img src="images/icons/mail.png" alt="Ícone de email" class="contactpic"></a>
+                <a href="https://wa.me/5592999999999" target="_blank" aria-label="WhatsApp"><img src="images/icons/call.png" alt="Ícone de telefone" class="contactpic"></a>
                     </div>    
             </div>
             </div>
@@ -135,33 +173,10 @@
         <div id="about">
             <div class="color-changer">
             <div class="color-panel">
-                <img src="images/icons/gear.png" alt="">
+                <img src="images/icons/gear.png" alt="Ícone de configurações">
             </div>
-            <div class="color-selector">
-                <div class="heading">Custom Colors</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
+
+
             </div>
             <!--about content-->
             <div id="about-content">
@@ -188,7 +203,7 @@
             </div>
             <!--about picture-->
             <div class="about-img">
-                <img src="images/about.png" alt="Your Image">
+                <img src="images/about.png" alt="Foto de Adriano Freitas" loading="lazy">
             </div>
             </div>
     
@@ -197,33 +212,9 @@
             <div id="services">
                 <div class="color-changer">
                     <div class="color-panel">
-                        <img src="images/icons/gear.png" alt="">
+                        <img src="images/icons/gear.png" alt="Ícone de configurações">
                     </div>
-                    <div class="color-selector">
-                        <div class="heading">Custom Colors</div>
-                        <div class="colors">
-                            <ul >
-                            <li>
-                                <a href="#0" class="color-red " title="color-red"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-purple" title="color-purple"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-malt" title="color-malt"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-green" title="color-green"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-blue" title="color-blue"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-orange" title="color-orange"></a>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                     </div>
             <!--services header-->
                     <div class="services-heading wow">
@@ -234,7 +225,7 @@
                     <div class="services-content">
                            <div class="service-one service wow">
                                <div class="service-img">
-                               <img src="images/icons/bug.png" alt="service-one">
+                               <img src="images/icons/bug.png" alt="Ícone de bug" loading="lazy">
                                </div>
                                <div class="service-description">
                                 <h2>Bug Hunter</h2>
@@ -243,7 +234,7 @@
                            </div>
                            <div class="service-two service wow">
                                <div class="service-img">
-                               <img src="images/icons/community.png" alt="service-two">
+                               <img src="images/icons/community.png" alt="Ícone de comunidade" loading="lazy">
                                </div>
                                <div class="service-description">
                                 <h2>Community Mananger</h2>
@@ -252,7 +243,7 @@
                            </div>
                            <div class="service-three service wow">
                             <div class="service-img">
-                               <img src="images/icons/social-media.png" alt="service-three">
+                               <img src="images/icons/social-media.png" alt="Ícone de mídia social" loading="lazy">
                             </div>
                             <div class="service-description">
                                 <h2>Social Media</h2>
@@ -344,9 +335,9 @@
         <div id="portfolio">
             <div class="color-changer">
                 <div class="color-panel">
-                    <img src="images/icons/gear.png" alt="">
+                    <img src="images/icons/gear.png" alt="Ícone de configurações">
                 </div>
-                <div class="color-selector">
+                
                     <div class="heading">Custom Colors</div>
                     <div class="colors">
                         <ul >
@@ -372,12 +363,13 @@
                     </div>
                 </div>
                 </div>
-            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
+            <!--<div class="portfolio-header"> <span class="color"> My </span> Portfolio
             <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
-             <div id="portfolio-content">
+             
+            <div id="portfolio-content">
                  <div class="portfolio portfolio-first">
                      <div class="portfolio-image">
-                        <img src="images/portfolio.png" alt="portfolio-first">
+                        <img src="images/portfolio.png" alt="Imagem do projeto App Idea" loading="lazy">
                      </div>
                      <div class="portfolio-text">
                          <h2>App Idea</h2>
@@ -386,7 +378,7 @@
                      </div>
                  </div>
  
-                 </div>
+                 </div> -->
                     <!--copyright-section You Can Remove After Downloading-->
             <div class="footer">
                 <div class="footer-text">
@@ -396,37 +388,99 @@
        <!--copyright-section-->
              </div>
         <!--portfolio end-->
+        
+        <!--tools-->
+        <div id="tools">
+           <div class="color-changer">
+               <div class="color-panel">
+                   <img src="images/icons/gear.png" alt="Ícone de configurações">
+               </div>
+
+           </div>
+           <div class="tools-header">
+            <span class="color">My</span> Tools
+            <span class="header-caption">Simple tools for <span class="color">web security & testing</span></span>
+          </div>
+          
+           <div id="tools-content">
+            <div class="tools-grid">
+
+                <a href="tools/base64/index.html">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/coding.png" alt="Base64 Debugger Icon" loading="lazy">
+                        </div>
+                        <div class="tool-info">
+                            <h3>Base64 Debugger</h3>
+                            <p>Tool for encoding and decoding strings in Base64. Useful for working with binary data in text format.</p>
+                            <div class="index">
+                            </div>
+                        </div>
+                    </div>
+                </a>            
+                <a href="tools/jwt/index.html">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/coding.png" alt="JWT Debugger Icon" loading="lazy">
+                        </div>
+                        <div class="tool-info">
+                            <h3>JWT Debugger</h3>
+                            <p>Tool for validating and decoding JWT (JSON Web Tokens). View token contents and check their validity.</p>
+                            <div class="index">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="tools/url/index.html">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/coding.png" alt="URL Debugger Icon" loading="lazy">
+                        </div>
+                        <div class="tool-info">
+                            <h3>URL Debugger</h3>
+                            <p>This tool allows you to encode or decode text using <strong>percent-encoding</strong> (URL encoding). Useful for debugging HTTP requests, query parameters, and payloads with special characters.</p>
+                            <div class="index">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="tools/redirect/index.html">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <img src="images/icons/coding.png" alt="Open Redirect Icon" loading="lazy">
+                        </div>
+                        <div class="tool-info">
+                            <h3>Open Redirect Debugger</h3>
+                            <p>Enter a URL with a redirection parameter (e.g. <code>?url=</code>, <code>?next=</code>) and we will test it against common open redirect payloads.</p>
+                            <div class="index">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                
+            
+            </div>
+            
+           </div>
+           <!--copyright-section You Can Remove After Downloading-->
+           <div class="footer">
+               <div class="footer-text">
+                   <img src="./images/icons/creative-commons.png" alt="copyright-img" class="images" height="14px"> Adriano Freitas
+               </div>
+           </div>
+           <!--copyright-section-->
+        </div>
+        <!--tools end-->
+        
         <!--blog-->
         <div id="blog">
             <div class="color-changer">
                 <div class="color-panel">
-                    <img src="images/icons/gear.png" alt="">
+                    <img src="images/icons/gear.png" alt="Ícone de configurações">
                 </div>
-                <div class="color-selector">
-                    <div class="heading">Custom Colors</div>
-                    <div class="colors">
-                        <ul >
-                        <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
+
+
                 </div>
         <div class="blog-header"> Blogs</span>
             <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span></div>
@@ -434,7 +488,7 @@
                  <div class="blogs">
                      <a href="#">
                      <div class="img">
-                        <img src="images/post-one.jpg" alt="blog-one">
+                        <img src="images/post-one.jpg" alt="Imagem do post Do Bug Ao Bounty" loading="lazy">
                         <div class="blog-date">6 Jun,22</div>
                      </div>
                      <div class="blog-text">
@@ -447,7 +501,7 @@
                <!--copyright-section You Can Remove After Downloading-->
                <div class="footer">
                 <div class="footer-text">
-                    <img src="./images/icons/creative-commons.png" alt="copyright-img" class="images" height="14px"> Adriano Freitas
+                    <img src="./images/icons/creative-commons.png" alt="copyright-img" class="images" height="14px"> Drian Freitas
                 </div>
                </div>
        <!--copyright-section-->
@@ -455,36 +509,7 @@
         <!--blog end-->
         <!--contact-->
      <div id="contact">
-        <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/icons/gear.png" alt="">
-            </div>
-            <div class="color-selector">
-                <div class="heading">Custom Colors</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
+
          <div class="contact-header">Contact <span class="color"> Me</span>
         <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
         <div class="contact-content">
@@ -498,9 +523,9 @@
                         <input  id="name" type="text" placeholder="Name" class="input-name">
                         <input id="email" type="email" placeholder="Email"  class="input-name">
                     </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
-                    <button type="button" id ="submit" value="send">Submit</button>
+                    <input type="text" id="subject" placeholder="Assunto" class="input-subject" aria-label="Assunto">
+                    <textarea id="body" class="input-textarea" placeholder="Mensagem" aria-label="Mensagem"></textarea>
+                    <button type="button" id="submit" value="send">Enviar</button>
                  </form>
                
              </div>
@@ -512,21 +537,21 @@
                 </div>
                 <div class="contact-info-content">
                 <div class="contect-info-content-line">
-                    <img src="./images/icons/portrait.png" class="icon" alt="name-icon">
+                    <img src="./images/icons/portrait.png" class="icon" alt="Ícone de perfil" loading="lazy">
                     <div class="contact-info-icon-text">
                         <h6>Name</h6>
                         <p>Adriano Freitas</p>
                   </div>
                 </div>
                 <div class="contect-info-content-line">
-                  <img src="./images/icons/map.png" class="icon" alt="location-icon">
+                  <img src="./images/icons/map.png" class="icon" alt="Ícone de localização" loading="lazy">
                   <div class="contact-info-icon-text">
                       <h6>Location</h6>
                       <p>Manaus, Brazil</p>
                 </div>
               </div>
               <div class="contect-info-content-line">
-                  <img src="./images/icons/phone.png" class="icon" alt="phone-icon">
+                  <img src="./images/icons/phone.png" class="icon" alt="Ícone de telefone" loading="lazy">
                   <div class="contact-info-icon-text">
                       <h6>Call</h6>
                       <p>+55 92 99999-9999</p>
@@ -534,7 +559,7 @@
               </div>
               
               <div class="contect-info-content-line">
-                  <img src="./images/icons/mail.png" class="icon" alt="email-icon">
+                  <img src="./images/icons/mail.png" class="icon" alt="Ícone de email" loading="lazy">
                   <div class="contact-info-icon-text">
                       <h6>Email</h6>
                       <p>Info@adrianofreitas.me</p>
@@ -555,13 +580,105 @@
         <!--contact end-->
     </div>
     <!--all the divisions-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/particles.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+    
+    <style>
+    /* Estilos para a seção de ferramentas */
+    #tools {
+        background-color: #11111b;
+        display: none;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    .tools-header {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        font-family: Share Tech Mono;
+        color: whitesmoke;
+        padding: 10px;
+        padding-bottom: 30px;
+        padding-top: 60px;
+        font-weight: 900;
+    }
+    
+    .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .tool-card {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tool-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .tool-icon {
+        padding: 30px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .tool-icon img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+    
+    .tool-info {
+        padding: 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tool-info h3 {
+        color: #8826f9;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 22px;
+        font-family: Share Tech Mono;
+    }
+    
+    .tool-info p {
+        margin-bottom: 20px;
+        color: whitesmoke;
+        opacity: 0.8;
+        flex-grow: 1;
+    }
+    
+    .tool-info .button {
+        margin-top: auto;
+    }
+    </style>
     <!--particles script-->
     <script>
-  particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+        }
+    });
     </script>
 
 </body>

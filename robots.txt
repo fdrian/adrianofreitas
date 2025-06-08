@@ -1,7 +1,7 @@
 User-agent: *
-Disallow: /.well-known/  # Geralmente contém arquivos sensíveis como certificados ACME
-Disallow: /images/favicon/  # Favicons não precisam ser indexados separadamente
-Disallow: /images/icons/  # Ícones normalmente são recursos e não páginas indexáveis
+Disallow: /.well-known/
+Disallow: /images/favicon/
+Disallow: /images/icons/
 
 User-agent: Googlebot
 Allow: /
@@ -18,5 +18,4 @@ Disallow: /
 User-agent: archive.org_bot
 Disallow: /
 
-Sitemap: https://seudominio.com/sitemap.xml
-
+Sitemap: https://adrianofreitas.me/sitemap.xml

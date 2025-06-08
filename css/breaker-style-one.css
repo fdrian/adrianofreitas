@@ -29,7 +29,7 @@
 #breaker-two{
     height: 50vh;
     width: 200%;
-    background-color: #080808;
+    background-color: #11111b;
     opacity: 1;
     animation: breakeranimatetwo 2s linear;
     display: none;

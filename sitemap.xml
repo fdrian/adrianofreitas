@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
 
     <!-- Página principal -->
     <url>
         <loc>https://adrianofreitas.me/</loc>
-        <lastmod>2025-03-20</lastmod>
+        <lastmod>2025-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://adrianofreitas.me/images/about.png</image:loc>
+            <image:caption>Adriano Freitas - Bug Hunter e Community Manager</image:caption>
+        </image:image>
     </url>
 
-    <!-- Diretórios importantes -->
+    <!-- Futuras páginas de ferramentas -->
     <url>
-        <loc>https://adrianofreitas.me/css/</loc>
-        <lastmod>2025-03-20</lastmod>
+        <loc>https://adrianofreitas.me/tools/base64/</loc>
+        <lastmod>2025-06-08</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    <url>
-        <loc>https://adrianofreitas.me/js/</loc>
-        <lastmod>2025-03-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://adrianofreitas.me/images/</loc>
-        <lastmod>2025-03-20</lastmod>
+        <loc>https://adrianofreitas.me/tools/jwt/</loc>
+        <lastmod>2025-06-08</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.4</priority>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
