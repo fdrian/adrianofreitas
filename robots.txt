@@ -1,7 +1,7 @@
 User-agent: *
 Disallow: /.well-known/
-Disallow: /images/favicon/
-Disallow: /images/icons/
+Disallow: /src/images/favicon/
+Disallow: /src/images/icons/
 
 User-agent: Googlebot
 Allow: /

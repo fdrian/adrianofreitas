@@ -15,7 +15,7 @@ $('.colors a').on("click",function(e) {
   e.preventDefault();
   var attr = $(this).attr("title");
   console.log(attr);
-  $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
+  $('head').append('<link rel="stylesheet" href="src/css/'+attr+'.css">');
 });
 });
 $(function(){

@@ -14,7 +14,7 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://adrianofreitas.me/images/about.png</image:loc>
+            <image:loc>https://adrianofreitas.me/src/images/about.png</image:loc>
             <image:caption>Adriano Freitas - Bug Hunter e Community Manager</image:caption>
         </image:image>
     </url>
