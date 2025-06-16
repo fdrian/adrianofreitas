@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Testador de Open Redirect - Verifique se endpoints permitem redirecionamentos inseguros." />
+  <meta name="author" content="Adriano Freitas" />
+  <title>Testador de Open Redirect - Adriano Freitas</title>
+  <link rel="stylesheet" href="../../../src/css/index.css">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <div class="tool-container">
+    <header>
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../../../src/images/logo.png" alt="Logo Adriano Freitas " height="16">
+        </a>
+      </div>
+      <h1>Testador de Open Redirect</h1>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Início</a></li>
+          <li><a href="../index.html">Ferramentas</a></li>                
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tool-description">
+        <p>Esta ferramenta verifica se uma URL está vulnerável a redirecionamentos abertos, injetando payloads conhecidos em parâmetros de redirecionamento.</p>
+      </div>
+
+      <div class="tool-panel">
+        <div class="input-section">
+          <h2>URL de Destino</h2>
+          <input type="text" id="url-input" placeholder="https://exemplo.com/redirect" />
+
+          <h3>Parâmetros de Redirecionamento</h3>
+          <input type="text" id="param-input" placeholder="ex: url,next,redirect" title="Lista de parâmetros separados por vírgula" />
+        </div>
+
+        <div class="actions">
+          <button id="test-btn" class="action-btn">Testar Redirecionamentos</button>
+          <button id="clear-btn" class="action-btn secondary">Limpar</button>
+        </div>
+
+        <div class="output-section">
+          <h2>Resultados</h2>
+          <div id="results" class="json-output">Os resultados do teste aparecerão aqui.</div>
+        </div>
+
+        <div class="output-section">
+          <h2>Pré-visualização via iFrame</h2>
+          <iframe id="redirect-frame" sandbox="allow-same-origin allow-scripts" style="width:100%; height:300px; border:1px solid #181825;"></iframe>
+        </div>
+      </div>
+    </main>
+
+        <footer>      
+            <div class="footer">
+            <div class="footer-text">
+                <img src="../../../src/images/icons/creative-commons.png" alt="Creative Commons Icon" class="images" height="14px">  <span id="current-year"></span> Adriano Freitas</p>
+            </div>
+            </div>
+        </div>
+        </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

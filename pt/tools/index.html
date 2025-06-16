@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ferramentas simples para segurança e testes web." />
+  <meta name="author" content="Adriano Freitas" />
+  <title>Drian Tools</title>
+  
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+  <div class="tool-container">
+    <header>
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../../src/images/logo.png" alt="Logo Adriano Freitas" height="16">
+        </a>
+      </div>
+      <h1>Drian Tools</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="index.html">Ferramentas</a></li>                
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div id="tools">
+
+          <div class="tools-header">
+            <span class="header-caption">Ferramentas para <span class="color">segurança e testes web</span></span> <br>
+          </div>
+          
+          <div id="tools-content">
+            <div class="tools-grid">
+
+                <div class="tool-card">                    
+                    <div class="tool-info">
+                        <a href="base64/index.html">
+                            <h3>Base64 Debugger</h3>
+                        </a>            
+                        <p>Ferramenta para codificar e decodificar strings em Base64. Útil para trabalhar com dados binários em formato de texto.</p>                            
+                    </div>
+                </div><br>
+
+                <div class="tool-card">                        
+                    <div class="tool-info">
+                        <a href="jwt/index.html">
+                            <h3>JWT Debugger</h3>
+                        </a>
+                        <p>Ferramenta para validar e decodificar JWT (JSON Web Tokens). Visualize o conteúdo do token e verifique sua validade.</p>
+                    </div>
+                </div><br>
+
+                <div class="tool-card">
+                    <div class="tool-info">
+                        <a href="url/index.html">
+                            <h3>URL Debugger</h3>
+                        </a>
+                        <p>Esta ferramenta permite codificar ou decodificar texto usando <strong>percent-encoding</strong> (codificação de URL). Útil para depurar requisições HTTP, parâmetros e payloads com caracteres especiais.</p>
+                    </div>
+                </div><br>
+
+                <div class="tool-card">
+                    <div class="tool-info">
+                        <a href="redirect/index.html">
+                            <h3>Open Redirect Tester</h3>
+                        </a>
+                        <p>Insira uma URL com um parâmetro de redirecionamento (ex: <code>?url=</code>, <code>?next=</code>) e testaremos contra payloads comuns de open redirect.</p>
+                    </div>
+                </div><br>            
+            </div>
+          </div>
+    </main>
+
+    <footer>      
+        <div class="footer">
+          <div class="footer-text">
+            <img src="../../src/images/icons/creative-commons.png" alt="ícone de direitos autorais" class="images" height="14px">  <span id="current-year"></span> Adriano Freitas - <a href="../index.html">adrianofreitas.me</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
