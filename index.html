@@ -1,18 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <script>
-    const lang = navigator.language || navigator.userLanguage;
-    if (lang.startsWith("pt")) {
-      window.location.href = "/pt/";
-    } else {
-      window.location.href = "/en/";
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Drian (Drian) - Bug Hunter and Community Manager at Pato Academy with over 3 years of experience in cybersecurity." />
+  <meta name="keywords"
+    content="bug bounty, ethical hacking, cybersecurity, community manager, Pato Academy, Gabriel Pato, Drian, Linux, shell scripting, Python, infosec, online resume, personal portfolio, Base64 tool, JWT tool, URL decoder, open redirect tester" />
+  <meta name="author" content="Drian" />
+  <title>Drian (Drian) - Bug Hunter & Community Manager @ Pato Academy</title>
+
+  <meta property="og:title" content="Drian (@Drian)">
+  <meta property="og:description"
+    content="Bug bounty researcher and community leader at Pato Academy. Explore my journey in cybersecurity, tools, and insights on hacking and ethical disclosure.">
+  <meta property="og:image" content="https://fdrian.me/src/images/background.png">
+  <meta property="og:url" content="https://fdrian.me/">
+  <meta property="og:site_name" content="fdrian.me">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta name="geo.region" content="BR-AM" />
+  <meta name="geo.placename" content="Manaus" />
+  <meta name="google-signin-client_id"
+    content="931099039723-sk82l525jv4vlj0jjaoe6pu1os2cjqa6.apps.googleusercontent.com">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, minimum-scale=1">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="msapplication-TileColor" content="#cdd6f4">
+  <meta name="msapplication-TileImage" content="./src/images/favicon/android-chrome-192x192.png">
+  <meta name="msapplication-square70x70logo" content="./src/images/favicon/android-chrome-192x192.png">
+  <meta name="msapplication-square150x150logo" content="./src/images/favicon/android-chrome-192x192.png">
+  <meta name="msapplication-wide310x150logo" content="./src/images/favicon/android-chrome-192x192.png">
+  <meta name="msapplication-square310x310logo" content="./src/images/favicon/android-chrome-512x512.png">
+  <meta property="fb:app_id" content="756207989575323">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@xfdrian">
+  <meta name="twitter:url" content="https://fdrian.me">
+  <meta name="twitter:title" content="Drian (@xfdrian) - Cybersecurity Researcher">
+  <meta name="twitter:description"
+    content="Discover ethical hacking tools and insights by Drian, bug bounty hunter and Community Manager at Pato Academy.">
+  <meta name="twitter:image" content="https://fdrian.me/src/images/background.png">
+  <meta name="twitter:image:width" content="1024">
+  <meta name="twitter:image:height" content="512">
+
+  <link rel="icon" type="image/png" href="./src/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" as="script">
+  <link rel="preload" href="./src/js/particles.min.js" as="script">
+  <link rel="preload" href="./src/images/about.png" as="image">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Drian",
+      "alternateName": "Drian",
+      "url": "https://fdrian.me",
+      "image": "https://fdrian.me/src/images/about.png",
+      "jobTitle": "Community Manager",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Pato Academy"
+      },
+      "description": "Cybersecurity researcher and community builder with over 3 years of experience. Specialized in bug bounty, vulnerability research, and security education.",
+      "sameAs": [
+        "https://github.com/fdrian",
+        "https://linkedin.com/in/fdrian",
+        "https://twitter.com/xfdrian",
+        "https://instagram.com/xfdrian"
+      ],
+      "knowsAbout": ["Bug Bounty", "Cybersecurity", "Community Management", "Linux", "Python"]
     }
-  </script>
+    </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
+
 <body>
-  <p>Redirecting based on your language...</p>
+  <!--contains all the div-->
+  <div id="all">
+    <!--mouse  follower-->
+    <div class="cursor"></div>
+    <!--mouse  follower-->
+    <!--loader-->
+    <div id="loader">
+      <span class="color">Drian</span>
+    </div>
+    <!--loader-end-->
+    <!--link-screen-->
+    <div id="breaker">
+    </div>
+    <div id="breaker-two">
+    </div>
+    <!--link-screen-->
+    <!--Main-Section-->
+    <!--Navigator-fullscreen-->
+    <div id="navigation-content">
+      <div class="logo">
+        <img src="./src/images/logo.png" alt="Drian Logo" height="16">
+      </div>
+      <div class="navigation-close">
+        <span class="close-first"></span>
+        <span class="close-second"></span>
+      </div>
+      <div class="navigation-links">
+        <a href="#" data-text="HOME" id="home-link">HOME</a>
+        <a href="https://blog.fdrian.me" data-text="BLOG" id="blog-link" target="_blank">BLOG</a>
+        <a href="https://tools.fdrian.me" data-text="TOOLS" id="tools-link" target="_blank">TOOLS</a>
+        <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>
+        <a href="#" data-text="CONTACT" id="contact-link">CONTACT</a>
+      </div>
+    </div>
+    <!--Navigator-Fullscreen END-->
+    <!--Home Page-->
+    <!--Menubar-->
+    <div id="navigation-bar">
+      <img src="./src/images/logo.png" alt="Drian Logo" height="16">
+      <div class="menubar">
+        <span class="first-span"></span>
+        <span class="second-span"></span>
+        <span class="third-span"></span>
+      </div>
+    </div>
+    <!--Menubar End-->
+    <!--Header-->
+    <div id="header">
+      <div id="particles"></div>
+      <!--Social Media Links-->
+      <div class="social-media-links">
+        <a href="https://instagram.com/xfdrian?utm_source=fdrian.me" target="_blank"><img
+            src="./src/images/icons/instagram.png" class="social-media" alt="instagram-logo"></a>
+        <a href="https://github.com/fdrian?utm_source=fdrian.me" target="_blank"><img
+            src="./src/images/icons/github.png" class="social-media" alt="facebook-logo"></a>
+        <a href="https://linkedin.com/in/fdrian?utm_source=fdrian.me" target="_blank"><img
+            src="./src/images/icons/linkedin.png" class="social-media" alt="linkedin-logo"></a>
+        <a href="https://twitter.com/xfdrian?utm_source=fdrian.me" target="_blank"><img src="./src/images/icons/x.png"
+            class="social-media" alt="twitter-logo"></a>
+
+      </div>
+      <!--Social Media Links end-->
+      <div class="header-content">
+        <div class="header-content-box">
+          <div class="firstline">F. <span class="color">DRIAN</span></div>
+          <div class="secondline">
+            I'm a
+            <span class="txt-rotate color" data-period="1200"
+              data-rotate='[ " community manager.", " investigator.", " hacker.", " freelancer." ]'></span>
+            <span class="slash">|</span>
+          </div>
+          <div class="contact">
+            <a href="Mailto:work@fdrian.me" aria-label="Email"><img src="./src/images/icons/mail.png"
+                alt="Ícone de email" class="contactpic"></a>
+            <a href="https://wa.me/5592999999999" target="_blank" aria-label="WhatsApp"><img
+                src="./src/images/icons/call.png" alt="Phone icon" class="contactpic"></a>
+          </div>
+        </div>
+      </div>
+      <!--header image-->
+      <div class="header-image">
+
+      </div>
+      <!--header image end-->
+    </div>
+    <!--Header End-->
+    <!--HomePage End-->
+    <!--Main-Section End-->
+    <!--about-->
+    <div id="about">
+
+      <!--about content-->
+      <div id="about-content">
+        <div class="about-header">
+          About <span class="color">Me</span>
+          <span class="header-caption">Get to Know <span class="color"> me.</span></span>
+        </div>
+        <div class="about-main">
+          <div class="about-first-paragraph wow">
+            <!--about description-->
+            <span class="about-first-line">
+              I'm
+              <span class="color">bug hunter</span>
+              based in Manaus, Brazil.
+            </span>
+            <br>
+            <span class="about-second-line">
+              With over 3 years of experience as a community manager and in identifying vulnerabilities, including
+              discovering a CVE, I have the skills and dedication to enhance your project's security. I thrive on the
+              challenge of finding bugs.
+            </span>
+
+            <div class="cv">
+              <a href="https://linkedin.com/in/fdrian?utm_source=fdrian.me"><button>VIEW <span
+                    class="colors">RESUME</span></button></a>
+            </div>
+          </div>
+          <!--about picture-->
+          <div class="about-img">
+            <img src="./src/images/about.png" alt="Picture of Drian" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!--about end-->
+
+    <!--contact-->
+    <div id="contact">
+
+      <div class="contact-header">Contact <span class="color"> Me</span>
+        <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div>
+      </div>
+      <div class="contact-content">
+        <!--Contact form-->
+        <div class="contact-form">
+          <div class="form-header">
+            Message Me
+          </div>
+          <form id="myForm" action="#">
+            <div class="input-line">
+              <input id="name" type="text" placeholder="Name" class="input-name">
+              <input id="email" type="email" placeholder="Email" class="input-name">
+            </div>
+            <input type="text" id="subject" placeholder="Assunto" class="input-subject" aria-label="Assunto">
+            <textarea id="body" class="input-textarea" placeholder="Mensagem" aria-label="Mensagem"></textarea>
+            <button type="button" id="submit" value="send">Enviar</button>
+          </form>
+
+        </div>
+        <!--Contact form-->
+        <!--Contact information-->
+        <div class="contact-info">
+          <div class="contact-info-header">
+            Contact Info
+          </div>
+          <div class="contact-info-content">
+            <div class="contect-info-content-line">
+              <img src="./src/images/icons/portrait.png" class="icon" alt="Ícone de perfil" loading="lazy">
+              <div class="contact-info-icon-text">
+                <h6>Name</h6>
+                <p>Drian</p>
+              </div>
+            </div>
+            <div class="contect-info-content-line">
+              <img src="./src/images/icons/map.png" class="icon" alt="Ícone de localização" loading="lazy">
+              <div class="contact-info-icon-text">
+                <h6>Location</h6>
+                <p>Manaus, Brazil</p>
+              </div>
+            </div>
+            <div class="contect-info-content-line">
+              <img src="./src/images/icons/phone.png" class="icon" alt="Ícone de telefone" loading="lazy">
+              <div class="contact-info-icon-text">
+                <h6>Call</h6>
+                <p>+55 92 99999-9999</p>
+              </div>
+            </div>
+
+            <div class="contect-info-content-line">
+              <img src="./src/images/icons/mail.png" class="icon" alt="Ícone de email" loading="lazy">
+              <div class="contact-info-icon-text">
+                <h6>Email</h6>
+                <p>work@fdrian.me</p>
+              </div>
+            </div>
+          </div>
+          <!--Contact information end-->
+        </div>
+      </div>
+
+    </div>
+    <!--contact end-->
+
+    <!--Creative Commons-->
+    <div class="footer">
+      <div class="footer-text">
+        <img src="./src/images/icons/creative-commons.png" alt="copyright-img" class="images" height="14px"> DRIAN
+      </div>
+    </div>
+
+  </div>
+  <!--portfolio end-->
+  </div>
+  <!--all the divisions-->
+  <script src="./src/js/jquery.min.js" defer></script>
+  <script src="./src/js/particles.min.js" defer></script>
+  <script src="./src/js/index.js" defer></script>
+
+
+  <!--particles script-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof particlesJS !== 'undefined') {
+        particlesJS("particles", { "particles": { "number": { "value": 40, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+      }
+    });
+  </script>
+
 </body>
+
 </html>

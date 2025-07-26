@@ -1,0 +1,7 @@
+          <div class="blog-text">
+            <h3>Do Bug Ao Bounty</h3>
+            <p>Recently, I resumed my journey into the world of hacking by enrolling in the "Do Bug ao Bounty" course by
+              Gabriel Pato at Pato Academy. This course provided me with a solid foundation in security techniques and
+              helped me understand the process of identifying and exploiting vulnerabilities. I am excited to apply what
+              I've learned and continue to evolve as a bug hunter..</p>
+          </div>

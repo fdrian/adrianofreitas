@@ -9,28 +9,28 @@
 
     <!-- Página principal -->
     <url>
-        <loc>https://adrianofreitas.me/</loc>
-        <lastmod>2025-06-08</lastmod>
+        <loc>https://fdrian.me/</loc>
+        <lastmod>2025-07-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://adrianofreitas.me/src/images/about.png</image:loc>
-            <image:caption>Adriano Freitas - Bug Hunter e Community Manager</image:caption>
+            <image:loc>https://fdrian.me/src/images/about.png</image:loc>
+            <image:caption>Adriano  - Bug Hunter e Community Manager</image:caption>
         </image:image>
     </url>
 
-    <!-- Futuras páginas de ferramentas -->
+    <!-- External tools and blog subdomains -->
     <url>
-        <loc>https://adrianofreitas.me/tools/base64/</loc>
-        <lastmod>2025-06-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://tools.fdrian.me/</loc>
+        <lastmod>2025-07-26</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://adrianofreitas.me/tools/jwt/</loc>
-        <lastmod>2025-06-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://blog.fdrian.me/</loc>
+        <lastmod>2025-07-26</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 

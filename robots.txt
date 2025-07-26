@@ -18,4 +18,4 @@ Disallow: /
 User-agent: archive.org_bot
 Disallow: /
 
-Sitemap: https://adrianofreitas.me/sitemap.xml
+Sitemap: https://fdrian.me/sitemap.xml

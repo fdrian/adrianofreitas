@@ -1,8 +1,8 @@
-# security.txt for adrianofreitas.me
+# security.txt for fdrian.me
 
-Contact: mailto:security@adrianofreitas.me
-Encryption: https://adrianofreitas.me/pgp-key
-Acknowledgements: https://adrianofreitas.me/acknowledgements
+Contact: mailto:security@fdrian.me
+Encryption: https://fdrian.me/pgp-key
+Acknowledgements: https://fdrian.me/acknowledgements
 Preferred-Languages: en, pt
 
 # Please do not disclose vulnerabilities publicly without permission.
