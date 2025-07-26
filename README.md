@@ -1,3 +1,4 @@
 # Adriano 
-# @xfdrian
-I'm Community Manager @ Pato Academy
+## @xfdrian
+Community Manager @ Pato Academy
+Creative Services @ Critical Thinking Podcast
