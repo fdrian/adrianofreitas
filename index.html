@@ -52,7 +52,128 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    referrerpolicy="no-referrer">
+  <style>
+    .header-content {
+      font-family: 'Fira Code', monospace;
+      letter-spacing: 0.04em;
+    }
+
+    .header-content .header-content-box {
+      padding-right: 0;
+    }
+
+    .header-content .firstline.logo-wordmark {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.08em;
+      font-family: 'Space Mono', monospace;
+      font-size: clamp(2.8rem, 7vw, 4.6rem);
+      line-height: 1.1;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .header-content .logo-wordmark .logo-fragment {
+      position: relative;
+      display: inline-block;
+    }
+
+    .header-content .logo-wordmark .drian-highlight {
+      position: relative;
+      display: inline-block;
+      color: var(--text-primary);
+      isolation: isolate;
+      text-shadow: 0 0 0 transparent;
+      transition: color 0.2s ease, text-shadow 0.12s ease;
+    }
+
+    .header-content .logo-wordmark .drian-highlight::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.12s ease;
+      z-index: -2;
+    }
+
+    .header-content .logo-wordmark .drian-highlight::after {
+      content: attr(data-text);
+      position: absolute;
+      inset: 0;
+      color: #6644aa;
+      opacity: 0;
+      pointer-events: none;
+      z-index: -1;
+      transition: opacity 0.12s ease;
+    }
+
+    .header-content .logo-wordmark:hover .drian-highlight,
+    .header-content .logo-wordmark.is-glitching .drian-highlight {
+      color: #f2f5ff;
+      text-shadow: 0.045em 0 0 var(--accent), -0.045em 0 0 #6644aa;
+    }
+
+    .header-content .logo-wordmark:hover .drian-highlight::before,
+    .header-content .logo-wordmark.is-glitching .drian-highlight::before {
+      opacity: 0;
+    }
+
+    .header-content .logo-wordmark:hover .drian-highlight::after,
+    .header-content .logo-wordmark.is-glitching .drian-highlight::after {
+      opacity: 0.55;
+      animation: logo-glitch 180ms steps(2, end) infinite;
+    }
+
+    .header-content .secondline {
+      font-family: 'Fira Code', monospace;
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @keyframes logo-glitch {
+      0% {
+        clip-path: inset(20% 0 60% 0);
+        transform: translate(-0.06em, 0);
+      }
+      20% {
+        clip-path: inset(60% 0 10% 0);
+        transform: translate(0.06em, 0);
+      }
+      40% {
+        clip-path: inset(40% 0 30% 0);
+        transform: translate(-0.04em, 0);
+      }
+      60% {
+        clip-path: inset(10% 0 70% 0);
+        transform: translate(0.04em, 0);
+      }
+      80% {
+        clip-path: inset(70% 0 5% 0);
+        transform: translate(-0.06em, 0);
+      }
+      100% {
+        clip-path: inset(20% 0 60% 0);
+        transform: translate(0, 0);
+      }
+    }
+
+    @media all and (max-width: 768px) {
+      .header-content .firstline.logo-wordmark {
+        gap: 0.04em;
+        letter-spacing: 0.08em;
+      }
+
+      .header-content .logo-wordmark .drian-highlight {
+        letter-spacing: inherit;
+      }
+    }
+  </style>
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JG4F07CF9D"></script>
@@ -111,32 +232,48 @@
       <!--Social Media Links-->
       <div class="social-media-links">
         <a href="https://instagram.com/xfdrian?utm_source=fdrian.me" target="_blank" rel="noopener"
-          aria-label="Instagram profile"><img src="./src/images/icons/instagram.png" class="social-media"
-            alt="Instagram icon"></a>
+          aria-label="Instagram profile"><i class="fa-brands fa-instagram social-media" aria-hidden="true"></i></a>
         <a href="https://github.com/fdrian?utm_source=fdrian.me" target="_blank" rel="noopener"
-          aria-label="GitHub profile"><img src="./src/images/icons/github.png" class="social-media"
-            alt="GitHub icon"></a>
+          aria-label="GitHub profile"><i class="fa-brands fa-github social-media" aria-hidden="true"></i></a>
         <a href="https://linkedin.com/in/fdrian?utm_source=fdrian.me" target="_blank" rel="noopener"
-          aria-label="LinkedIn profile"><img src="./src/images/icons/linkedin.png" class="social-media"
-            alt="LinkedIn icon"></a>
+          aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in social-media" aria-hidden="true"></i></a>
         <a href="https://twitter.com/xfdrian?utm_source=fdrian.me" target="_blank" rel="noopener"
-          aria-label="X (Twitter) profile"><img src="./src/images/icons/x.png" class="social-media"
-            alt="X (Twitter) icon"></a>
+          aria-label="X (Twitter) profile"><i class="fa-brands fa-x-twitter social-media" aria-hidden="true"></i></a>
 
       </div>
       <!--Social Media Links end-->
       <div class="header-content">
         <div class="header-content-box">
-          <div class="firstline">ADRIANO <span class="color">FREITAS</span></div>
+          <div class="firstline logo-wordmark" aria-label="Adriano Freitas">
+            <span class="logo-fragment">A</span>
+            <span class="logo-fragment drian-highlight" data-text="DRIAN">DRIAN</span>
+            <span class="logo-fragment">O FREITAS</span>
+          </div>
           <div class="secondline">
             Creative Contributor &amp; Community Manager
           </div>
+          <div class="header-links" aria-label="Site network">
+            <a href="https://tools.fdrian.me" rel="noopener">tools.fdrian.me</a>
+            <a href="https://guides.fdrian.me" rel="noopener">guides.fdrian.me</a>
+          </div>
           <div class="contact">
-            <a href="Mailto:fdrian@proton.me" aria-label="Email"><img src="./src/images/icons/mail.png"
-                alt="Email icon" class="contactpic"></a>
+            <a href="Mailto:fdrian@proton.me" aria-label="Email">
+              <svg class="contactpic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
             <a href="#console" class="terminal-toggle" aria-label="Console" aria-controls="terminal"
-              aria-expanded="false"><img src="./src/images/icons/console.png" alt="Console icon"
-                class="contactpic"></a>
+              aria-expanded="false">
+              <svg class="contactpic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" x2="20" y1="19" y2="19"></line>
+              </svg>
+            </a>
  
           </div>
         </div>
@@ -147,6 +284,40 @@
       </div>
       <!--header image end-->
     </div>
+
+    <section id="ecosystem" aria-labelledby="ecosystem-title">
+      <div class="ecosystem-shell">
+        <div class="ecosystem-intro">
+          <span class="ecosystem-kicker">fdrian.me network</span>
+          <h2 id="ecosystem-title">Browse the ecosystem</h2>
+          <p>Direct access to the tools hub and the command-line guides, using a simpler menu structure closer to the guides layout.</p>
+        </div>
+        <div class="ecosystem-menus">
+          <nav class="ecosystem-menu" aria-labelledby="tools-menu-title">
+            <div class="ecosystem-menu-head">
+              <span class="ecosystem-menu-kicker">tools</span>
+              <h3 id="tools-menu-title">tools.fdrian.me</h3>
+            </div>
+            <a href="https://tools.fdrian.me" rel="noopener">tools.fdrian.me</a>
+            <a href="https://tools.fdrian.me/base64/index.html" rel="noopener">base64 debugger</a>
+            <a href="https://tools.fdrian.me/jwt/index.html" rel="noopener">jwt debugger</a>
+            <a href="https://tools.fdrian.me/url/index.html" rel="noopener">url debugger</a>
+            <a href="https://tools.fdrian.me/headers/index.html" rel="noopener">http headers analyzer</a>
+            <a href="https://tools.fdrian.me/js-secrets/index.html" rel="noopener">javascript secrets finder</a>
+          </nav>
+          <nav class="ecosystem-menu" aria-labelledby="guides-menu-title">
+            <div class="ecosystem-menu-head">
+              <span class="ecosystem-menu-kicker">guides</span>
+              <h3 id="guides-menu-title">guides.fdrian.me</h3>
+            </div>
+            <a href="https://guides.fdrian.me" rel="noopener">guides.fdrian.me</a>
+            <a href="https://guides.fdrian.me/vim/" rel="noopener">vim guide</a>
+            <a href="https://guides.fdrian.me/tmux/" rel="noopener">tmux guide</a>
+            <a href="https://guides.fdrian.me/git/" rel="noopener">git guide</a>
+          </nav>
+        </div>
+      </div>
+    </section>
 
     <!--terminal-->
     <section id="terminal" aria-labelledby="terminal-title" aria-hidden="true">
@@ -164,7 +335,7 @@
             <span>help</span>
           </div>
           <div class="terminal-line">
-            <span>Commands: help, about, roles, skills, links, contact, clear</span>
+            <span>Commands: help, about, roles, skills, links, tools, guides, contact, clear</span>
           </div>
         </div>
         <label class="terminal-input-line">
@@ -180,7 +351,23 @@
   <!--portfolio end-->
   </div>
 
-  <script src="./src/js/terminal.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
+  <script>
+    (function () {
+      var wordmark = document.querySelector('.logo-wordmark');
+      if (!wordmark) {
+        return;
+      }
+
+      wordmark.addEventListener('mouseenter', function () {
+        wordmark.classList.add('is-glitching');
+      });
+
+      wordmark.addEventListener('mouseleave', function () {
+        wordmark.classList.remove('is-glitching');
+      });
+    })();
+  </script>
 
 </body>
 

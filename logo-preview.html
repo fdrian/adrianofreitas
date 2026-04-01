@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fdrian.me — Logo Preview</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+    /*
+    ── GEOMETRY ──────────────────────────────────────────────────────────────
+    Hexagon: pointy-top, R = 46, center (50, 50), viewBox "0 0 100 100"
+
+    Vertices  [angle = −90° + 60°×i, i = 0..5]:
+      (50.00,  4.00)  top
+      (89.84, 27.00)  top-right
+      (89.84, 73.00)  bottom-right
+      (50.00, 96.00)  bottom
+      (10.16, 73.00)  bottom-left
+      (10.16, 27.00)  top-left
+
+    polygon points="50,4 89.84,27 89.84,73 50,96 10.16,73 10.16,27"
+
+    Hex height (tip-to-tip) : 92 SVG units
+    Hex width  (flat-to-flat): 79.67 SVG units
+
+    "D" letter:
+      font-size 62 SVG units → cap-height ≈ 42 units ≈ 46% of hex height
+      x=50, y=50, dy=1 (Space Mono optical nudge), text-anchor=middle, dominant-baseline=central
+
+    Ghost layers (animated only — main "D" is never clipped):
+      ghost-1  fill #8826f9  translate(−2px, 0)
+      ghost-2  fill #6644aa  translate(+2px, 0)
+    ──────────────────────────────────────────────────────────────────────── */
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d0e17;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      font-family: 'Space Mono', monospace;
+      color: #cdd6f4;
+    }
+
+    .preview-title {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: #45475a;
+      text-transform: uppercase;
+    }
+
+    .preview-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 72px;
+    }
+
+    .logo-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .size-label {
+      font-size: 10px;
+      color: #45475a;
+      letter-spacing: 0.1em;
+    }
+
+    /* ── Logo wrapper ────────────────────────────────────────────────────── */
+    .logo-wrap {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .logo-wrap svg { display: block; }
+
+    /* Ghost overlay layers */
+    .ghost {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .ghost svg { width: 100%; height: 100%; }
+
+    /* ── Glitch keyframes ────────────────────────────────────────────────── */
+    @keyframes glitch-1 {
+      0%   { clip-path: inset(20% 0 60% 0); transform: translate(-2px, 0); opacity: 1; }
+      20%  { clip-path: inset(60% 0 10% 0); transform: translate( 2px, 0); }
+      40%  { clip-path: inset(40% 0 30% 0); transform: translate(-1px, 0); }
+      60%  { clip-path: inset(10% 0 70% 0); transform: translate( 1px, 0); }
+      80%  { clip-path: inset(70% 0  5% 0); transform: translate(-2px, 0); }
+      100% { clip-path: inset(20% 0 60% 0); transform: translate(    0, 0); opacity: 0; }
+    }
+
+    @keyframes glitch-2 {
+      0%   { clip-path: inset(60% 0 20% 0); transform: translate( 2px, 0); opacity: 1; }
+      20%  { clip-path: inset(10% 0 60% 0); transform: translate(-2px, 0); }
+      40%  { clip-path: inset(30% 0 40% 0); transform: translate( 1px, 0); }
+      60%  { clip-path: inset(70% 0 10% 0); transform: translate(-1px, 0); }
+      80%  { clip-path: inset( 5% 0 70% 0); transform: translate( 2px, 0); }
+      100% { clip-path: inset(60% 0 20% 0); transform: translate(    0, 0); opacity: 0; }
+    }
+
+    /* ── Hover glitch ────────────────────────────────────────────────────── */
+    .logo-wrap:hover .ghost-1,
+    .logo-wrap.glitching .ghost-1 {
+      opacity: 1;
+      animation: glitch-1 0.2s linear forwards;
+    }
+
+    .logo-wrap:hover .ghost-2,
+    .logo-wrap.glitching .ghost-2 {
+      opacity: 1;
+      animation: glitch-2 0.2s linear forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="preview-title">fdrian.me — Logo Preview</div>
+
+  <div class="preview-row">
+
+    <!-- ── Small: hex ~48px ──────────────────────────────────────────────── -->
+    <div class="logo-item">
+      <div class="logo-wrap" id="logo-sm">
+        <svg width="52" height="52" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,4 89.84,27 89.84,73 50,96 10.16,73 10.16,27"
+                   fill="#13141f" stroke="#8826f9" stroke-width="1.5"/>
+          <text x="50" y="50" dy="1"
+                text-anchor="middle" dominant-baseline="central"
+                font-family="'Space Mono', monospace" font-weight="700"
+                font-size="62" fill="#cdd6f4">D</text>
+        </svg>
+        <div class="ghost ghost-1">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="50" dy="1"
+                  text-anchor="middle" dominant-baseline="central"
+                  font-family="'Space Mono', monospace" font-weight="700"
+                  font-size="62" fill="#8826f9">D</text>
+          </svg>
+        </div>
+        <div class="ghost ghost-2">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="50" dy="1"
+                  text-anchor="middle" dominant-baseline="central"
+                  font-family="'Space Mono', monospace" font-weight="700"
+                  font-size="62" fill="#6644aa">D</text>
+          </svg>
+        </div>
+      </div>
+      <div class="size-label">48 px</div>
+    </div>
+
+    <!-- ── Medium: hex ~80px ─────────────────────────────────────────────── -->
+    <div class="logo-item">
+      <div class="logo-wrap" id="logo-md">
+        <svg width="87" height="87" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,4 89.84,27 89.84,73 50,96 10.16,73 10.16,27"
+                   fill="#13141f" stroke="#8826f9" stroke-width="1.5"/>
+          <text x="50" y="50" dy="1"
+                text-anchor="middle" dominant-baseline="central"
+                font-family="'Space Mono', monospace" font-weight="700"
+                font-size="62" fill="#cdd6f4">D</text>
+        </svg>
+        <div class="ghost ghost-1">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="50" dy="1"
+                  text-anchor="middle" dominant-baseline="central"
+                  font-family="'Space Mono', monospace" font-weight="700"
+                  font-size="62" fill="#8826f9">D</text>
+          </svg>
+        </div>
+        <div class="ghost ghost-2">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="50" dy="1"
+                  text-anchor="middle" dominant-baseline="central"
+                  font-family="'Space Mono', monospace" font-weight="700"
+                  font-size="62" fill="#6644aa">D</text>
+          </svg>
+        </div>
+      </div>
+      <div class="size-label">80 px</div>
+    </div>
+
+    <!-- ── Large: hex ~120px ─────────────────────────────────────────────── -->
+    <div class="logo-item">
+      <div class="logo-wrap" id="logo-lg">
+        <svg width="130" height="130" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,4 89.84,27 89.84,73 50,96 10.16,73 10.16,27"
+                   fill="#13141f" stroke="#8826f9" stroke-width="1.5"/>
+          <text x="50" y="50" dy="1"
+                text-anchor="middle" dominant-baseline="central"
+                font-family="'Space Mono', monospace" font-weight="700"
+                font-size="62" fill="#cdd6f4">D</text>
+        </svg>
+        <div class="ghost ghost-1">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="50" dy="1"
+                  text-anchor="middle" dominant-baseline="central"
+                  font-family="'Space Mono', monospace" font-weight="700"
+                  font-size="62" fill="#8826f9">D</text>
+          </svg>
+        </div>
+        <div class="ghost ghost-2">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="50" dy="1"
+                  text-anchor="middle" dominant-baseline="central"
+                  font-family="'Space Mono', monospace" font-weight="700"
+                  font-size="62" fill="#6644aa">D</text>
+          </svg>
+        </div>
+      </div>
+      <div class="size-label">120 px</div>
+    </div>
+
+  </div>
+
+  <div class="preview-title" style="color:#1a1b28">
+    hover to trigger glitch &nbsp;·&nbsp; idle fires every 4–8s
+  </div>
+
+  <script>
+    // Idle glitch: random interval 4–8s, burst of 200ms
+    function scheduleGlitch(el) {
+      var delay = 4000 + Math.random() * 4000;
+      setTimeout(function () {
+        el.classList.add('glitching');
+        setTimeout(function () {
+          el.classList.remove('glitching');
+          scheduleGlitch(el);
+        }, 200);
+      }, delay);
+    }
+    document.querySelectorAll('.logo-wrap').forEach(scheduleGlitch);
+
+    // Hover: re-trigger glitch on each mouseenter so it fires fresh each time
+    document.querySelectorAll('.logo-wrap').forEach(function (el) {
+      el.addEventListener('mouseenter', function () {
+        // Reset animation by toggling the class
+        el.querySelectorAll('.ghost').forEach(function (g) {
+          g.style.animation = 'none';
+          g.offsetHeight; // reflow
+          g.style.animation = '';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

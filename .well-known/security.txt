@@ -1,7 +1,7 @@
 # security.txt for fdrian.me
 
-Contact: mailto:security@fdrian.me
-Encryption: https://fdrian.me/pgp-key
+Contact: mailto:fdrian@proton.me
+Encryption: https://fdrian.me/.well-known/ssh-keys
 Acknowledgements: https://fdrian.me/acknowledgements
 Preferred-Languages: en, pt
 
