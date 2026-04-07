@@ -3,9 +3,9 @@
 /* ─── Design Tokens ────────────────────────────────────────────────────── */
 :root {
   /* Base */
-  --bg:             #0d0e17;
-  --bg-surface:     #13141f;
-  --bg-subtle:      #1a1b28;
+  --bg:             #100c08;
+  --bg-surface:     #100c08;
+  --bg-subtle:      #100c08;
 
   /* Text */
   --text-primary:   #cdd6f4;
@@ -166,7 +166,7 @@ body {
   padding: 0 var(--space-4);
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(19, 20, 31, 0.78);
+  background: rgba(16, 12, 8, 0.1);
   color: var(--text-primary);
   text-decoration: none;
   font-family: var(--font-mono);
@@ -178,7 +178,7 @@ body {
 .header-links a:hover {
   transform: translateY(-1px);
   border-color: var(--border-focus);
-  background: rgba(19, 20, 31, 0.96);
+  background: rgba(16, 12, 8, 0.8);
   color: var(--accent-hover);
 }
 
@@ -219,7 +219,7 @@ body {
   margin: var(--space-2);
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(19, 20, 31, 0.78);
+  background: rgba(16, 12, 8, 0.0);
   box-shadow: 0 10px 24px rgba(13, 14, 23, 0.22);
   transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
@@ -236,7 +236,7 @@ body {
 .social-media-links a:hover {
   transform: translateY(-1px);
   border-color: rgba(205, 214, 244, 0.28);
-  background: rgba(19, 20, 31, 0.96);
+  background: rgba(16, 12, 8, 0.8);
   box-shadow: 0 14px 28px rgba(13, 14, 23, 0.3);
 }
 
@@ -278,7 +278,7 @@ body {
   margin: var(--space-2);
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(19, 20, 31, 0.78);
+  background: rgba(16, 12, 8, 0.3);
   box-shadow: 0 10px 24px rgba(13, 14, 23, 0.22);
   transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
@@ -286,7 +286,7 @@ body {
 .contact a:hover {
   transform: translateY(-1px);
   border-color: rgba(205, 214, 244, 0.28);
-  background: rgba(19, 20, 31, 0.96);
+  background: rgba(16, 12, 8, 0.8);
   box-shadow: 0 14px 28px rgba(13, 14, 23, 0.3);
 }
 
@@ -408,7 +408,7 @@ body {
 .ecosystem-menu a:hover {
   color: var(--text-primary);
   border-left-color: var(--accent);
-  background: rgba(136, 38, 249, 0.08);
+  background: rgba(16, 12, 8, 0.8);
 }
 
 .terminal-card {
