@@ -27,7 +27,7 @@ button:focus-visible {
 }
 
 ::-webkit-scrollbar-track {
-    background: #11111b;
+    background: #100c08;
     border-radius: 4px;
     width: 4px;
 }
@@ -44,7 +44,7 @@ input[type=number] {
 }
 
 html {
-    background: #11111b;
+    background: #100c08;
 
 }
 
@@ -53,11 +53,11 @@ body {
     height: auto;
     overflow-x: hidden;
     width: 100%;
-    background: #11111b;
+    background: #100c08;
 }
 
 #header {
-    background: #11111b;
+    background: #100c08;
     height: 100vh;
     width: 100%;
     ;
@@ -103,9 +103,7 @@ body {
     z-index: 2;
     text-align: center;
     height: auto;
-    padding-right: 60px;
     width: auto;
-
 }
 
 .header-content .firstline {
@@ -113,6 +111,51 @@ body {
     font-weight: 700;
     font-family: Blinker, sans-serif;
     font-size: 65px;
+    position: relative;
+    cursor: default;
+}
+
+.header-content .firstline::before,
+.header-content .firstline::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-family: Blinker, sans-serif;
+    font-size: 65px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-content .firstline:hover::before {
+    color: #ff2d78;
+    opacity: 0.85;
+    animation: glitch-top 0.35s steps(2) infinite;
+}
+
+.header-content .firstline:hover::after {
+    color: #00e5ff;
+    opacity: 0.85;
+    animation: glitch-bot 0.35s steps(2) infinite;
+}
+
+@keyframes glitch-top {
+    0%   { clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%); transform: translate(-4px, 0); }
+    25%  { clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%); transform: translate(4px, 0); }
+    50%  { clip-path: polygon(0 15%, 100% 15%, 100% 35%, 0 35%); transform: translate(-3px, 0); }
+    75%  { clip-path: polygon(0 65%, 100% 65%, 100% 80%, 0 80%); transform: translate(3px, 0); }
+    100% { clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%); transform: translate(-4px, 0); }
+}
+
+@keyframes glitch-bot {
+    0%   { clip-path: polygon(0 55%, 100% 55%, 100% 85%, 0 85%); transform: translate(4px, 0); }
+    25%  { clip-path: polygon(0 10%, 100% 10%, 100% 30%, 0 30%); transform: translate(-4px, 0); }
+    50%  { clip-path: polygon(0 70%, 100% 70%, 100% 90%, 0 90%); transform: translate(3px, 0); }
+    75%  { clip-path: polygon(0 25%, 100% 25%, 100% 50%, 0 50%); transform: translate(-3px, 0); }
+    100% { clip-path: polygon(0 55%, 100% 55%, 100% 85%, 0 85%); transform: translate(4px, 0); }
 }
 
 .header-content .secondline {
@@ -154,18 +197,8 @@ body {
     }
 }
 
-/* Estilos para a seção de ferramentas */
 #tools {
-    background-color: #11111b;
-    display: none;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-/* Estilos para a seção de ferramentas */
-#tools {
-    background-color: #11111b;
+    background-color: #100c08;
     display: none;
     width: 100%;
     height: auto;
@@ -338,6 +371,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+}
+
+.social-media-links a,
+.social-media-links a:link,
+.social-media-links a:visited,
+.social-media-links a:hover,
+.social-media-links a:active,
+.social-media-links a:focus {
+    color: inherit;
+    text-decoration: none !important;
+    display: inline-block; /* Helps remove ghost underlines */
+    line-height: 0;        /* Prevents the link from having 'text' height */
 }
 
 .social-media {
@@ -368,8 +414,14 @@ body {
     z-index: 3;
 }
 
+
+.social-media-links a {
+    display: none;
+}
+
 .contact a {
     z-index: 3;
+    text-decoration: none;
 }
 
 .contact img {
@@ -399,7 +451,7 @@ body {
 .terminal-card {
     width: min(520px, 92vw);
     margin: 0;
-    background: #11111b;
+    background: #100c08;
     border: 1px solid rgba(220, 224, 232, 0.12);
     border-radius: 10px;
     padding: 18px 20px;
@@ -497,7 +549,7 @@ body {
 }
 
 #about {
-    background-color: #11111b;
+    background-color: #100c08;
     display: block;
     width: 100%;
     height: auto;
@@ -935,7 +987,7 @@ body {
     margin-top: 160px;
     z-index: 3;
     opacity: 1;
-    background: #11111b;
+    background: #100c08;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1045,7 +1097,7 @@ button:hover .index {
     display: block;
     height: auto;
     overflow-x: hidden;
-    background-color: #11111b;
+    background-color: #100c08;
     width: 100%;
     color: #dce0e8;
 }
@@ -1066,7 +1118,7 @@ button:hover .index {
 }
 
 #blog {
-    background: #11111b;
+    background: #100c08;
     display: block;
     color: #dce0e8;
     width: 100%;
@@ -1165,7 +1217,7 @@ button:hover .index {
     height: auto;
     text-align: center;
     width: 100%;
-    background: #11111b;
+    background: #100c08;
     position: relative;
 }
 
@@ -1221,7 +1273,7 @@ button:hover .index {
     position: absolute;
     top: 0;
     left: 0;
-    background: #11111b;
+    background: #100c08;
     opacity: .8;
     pointer-events: none;
 }
@@ -1362,7 +1414,7 @@ form button:hover {
 }
 
 .footer {
-    background: #11111b;
+    background: #100c08;
     width: 100%;
     padding: 20px;
     color: #dce0e8;
@@ -1513,11 +1565,6 @@ For devices with smaller width like mobile phone
 
 
 */
-
-
-
-
-
 @media only screen and (max-width: 550px) {
     .header-content {
         height: 100vh;
@@ -1873,7 +1920,7 @@ For devices with smaller width like mobile phone
         position: absolute;
         top: 0;
         left: 0;
-        background: #11111b;
+        background: #100c08;
         opacity: .7;
         pointer-events: none;
     }
@@ -2247,7 +2294,7 @@ for tabs and large phones
         margin-left: 0px;
         margin-top: 0px;
         z-index: 1;
-        background: #11111b;
+        background: #100c08;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -2388,7 +2435,7 @@ for tabs and large phones
         position: absolute;
         top: 0;
         left: 0;
-        background: #11111b;
+        background: #100c08;
         opacity: .7;
         pointer-events: none;
     }
@@ -2753,7 +2800,7 @@ for tabs and large phones
         position: absolute;
         top: 0;
         left: 0;
-        background: #11111b;
+        background: #100c08;
         opacity: .7;
         pointer-events: none;
     }
