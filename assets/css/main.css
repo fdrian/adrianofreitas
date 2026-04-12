@@ -3,9 +3,9 @@
 /* ─── Design Tokens ────────────────────────────────────────────────────── */
 :root {
   /* Base */
-  --bg:             #100c08;
-  --bg-surface:     #100c08;
-  --bg-subtle:      #100c08;
+  --bg:             #00000a;
+  --bg-surface:     #00000a;
+  --bg-subtle:      #00000a;
 
   /* Text */
   --text-primary:   #cdd6f4;

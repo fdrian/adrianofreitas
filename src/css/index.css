@@ -27,7 +27,7 @@ button:focus-visible {
 }
 
 ::-webkit-scrollbar-track {
-    background: #100c08;
+    background: #00000a;
     border-radius: 4px;
     width: 4px;
 }
@@ -44,7 +44,7 @@ input[type=number] {
 }
 
 html {
-    background: #100c08;
+    background: #00000a;
 
 }
 
@@ -53,11 +53,11 @@ body {
     height: auto;
     overflow-x: hidden;
     width: 100%;
-    background: #100c08;
+    background: #00000a;
 }
 
 #header {
-    background: #100c08;
+    background: #00000a;
     height: 100vh;
     width: 100%;
     ;
@@ -198,7 +198,7 @@ body {
 }
 
 #tools {
-    background-color: #100c08;
+    background-color: #00000a;
     display: none;
     width: 100%;
     height: auto;
@@ -451,7 +451,7 @@ body {
 .terminal-card {
     width: min(520px, 92vw);
     margin: 0;
-    background: #100c08;
+    background: #00000a;
     border: 1px solid rgba(220, 224, 232, 0.12);
     border-radius: 10px;
     padding: 18px 20px;
@@ -549,7 +549,7 @@ body {
 }
 
 #about {
-    background-color: #100c08;
+    background-color: #00000a;
     display: block;
     width: 100%;
     height: auto;
@@ -987,7 +987,7 @@ body {
     margin-top: 160px;
     z-index: 3;
     opacity: 1;
-    background: #100c08;
+    background: #00000a;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1097,7 +1097,7 @@ button:hover .index {
     display: block;
     height: auto;
     overflow-x: hidden;
-    background-color: #100c08;
+    background-color: #00000a;
     width: 100%;
     color: #dce0e8;
 }
@@ -1118,7 +1118,7 @@ button:hover .index {
 }
 
 #blog {
-    background: #100c08;
+    background: #00000a;
     display: block;
     color: #dce0e8;
     width: 100%;
@@ -1217,7 +1217,7 @@ button:hover .index {
     height: auto;
     text-align: center;
     width: 100%;
-    background: #100c08;
+    background: #00000a;
     position: relative;
 }
 
@@ -1273,7 +1273,7 @@ button:hover .index {
     position: absolute;
     top: 0;
     left: 0;
-    background: #100c08;
+    background: #00000a;
     opacity: .8;
     pointer-events: none;
 }
@@ -1414,7 +1414,7 @@ form button:hover {
 }
 
 .footer {
-    background: #100c08;
+    background: #00000a;
     width: 100%;
     padding: 20px;
     color: #dce0e8;
@@ -1920,7 +1920,7 @@ For devices with smaller width like mobile phone
         position: absolute;
         top: 0;
         left: 0;
-        background: #100c08;
+        background: #00000a;
         opacity: .7;
         pointer-events: none;
     }
@@ -2294,7 +2294,7 @@ for tabs and large phones
         margin-left: 0px;
         margin-top: 0px;
         z-index: 1;
-        background: #100c08;
+        background: #00000a;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -2435,7 +2435,7 @@ for tabs and large phones
         position: absolute;
         top: 0;
         left: 0;
-        background: #100c08;
+        background: #00000a;
         opacity: .7;
         pointer-events: none;
     }
@@ -2800,7 +2800,7 @@ for tabs and large phones
         position: absolute;
         top: 0;
         left: 0;
-        background: #100c08;
+        background: #00000a;
         opacity: .7;
         pointer-events: none;
     }
