@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
 
 /* ─── Design Tokens ────────────────────────────────────────────────────── */
 :root {
@@ -31,8 +31,8 @@
   --space-8: 64px;
 
   /* Typography */
-  --font-body: 'Syne', sans-serif;
-  --font-mono: 'DM Mono', monospace;
+  --font-body: 'Fira Code', monospace;
+  --font-mono: 'Fira Code', monospace;
 }
 
 /* ─── Reset ─────────────────────────────────────────────────────────────── */
@@ -181,6 +181,79 @@ body {
   background: rgba(0, 0, 10, 0.8);
   color: var(--accent-hover);
 }
+
+/* ─── Latest guide card ──────────────────────────────────────────────────── */
+.latest-guide {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: var(--space-5) auto 0;
+  padding: 10px 18px;
+  max-width: 520px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(136, 38, 249, 0.06);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.latest-guide:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  background: rgba(136, 38, 249, 0.12);
+}
+
+.latest-guide .latest-kicker {
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.latest-guide .latest-title {
+  color: var(--text-primary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.latest-guide .latest-desc {
+  color: var(--text-secondary);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.latest-guide .latest-arrow {
+  color: var(--text-secondary);
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.latest-guide:hover .latest-arrow {
+  color: var(--accent);
+  transform: translateX(2px);
+}
+
+@media all and (max-width: 640px) {
+  .latest-guide {
+    flex-wrap: wrap;
+    border-radius: 18px;
+    padding: 12px 16px;
+  }
+
+  .latest-guide .latest-desc {
+    flex-basis: 100%;
+    white-space: normal;
+  }
+}
+
 
 /* ─── Slash animation ────────────────────────────────────────────────────── */
 .slash { animation: animateslash 0.8s infinite; }
@@ -406,6 +479,56 @@ body {
 }
 
 .ecosystem-menu a:hover {
+  color: var(--text-primary);
+  border-left-color: var(--accent);
+  background: rgba(0, 0, 10, 0.8);
+}
+
+.ecosystem-menu--chips {
+  display: flex;
+  flex-direction: column;
+}
+
+.ecosystem-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  flex: 1;
+  align-content: flex-start;
+}
+
+.ecosystem-menu--chips .ecosystem-chips .chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.ecosystem-menu--chips .ecosystem-chips .chip:hover {
+  color: var(--text-primary);
+  border-color: var(--accent);
+  background: rgba(136, 38, 249, 0.08);
+}
+
+.ecosystem-menu--chips .ecosystem-all {
+  border-top: 1px solid var(--border);
+  border-left: 2px solid transparent;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 12px 20px;
+}
+
+.ecosystem-menu--chips .ecosystem-all:hover {
   color: var(--text-primary);
   border-left-color: var(--accent);
   background: rgba(0, 0, 10, 0.8);

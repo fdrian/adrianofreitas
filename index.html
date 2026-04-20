@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description"
-    content="Drian (@xfdrian) is a cybersecurity researcher and community builder focused on bug bounty, vulnerability research, and security education." />
+    content="Drian (@xfdrian) — creative contributor and community manager. Tools, guides, and notes on bug bounty, vulnerability research, and security education." />
   <meta name="keywords"
-    content="bug bounty, vulnerability research, cybersecurity, community builder, Pato Academy, linux, Python, infosec, security education, personal portfolio" />
+    content="creative contributor, community manager, community builder, bug bounty, vulnerability research, cybersecurity, Pato Academy, linux, infosec, security education, personal portfolio" />
   <meta name="author" content="Drian" />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <title>Drian (@xfdrian) - Cybersecurity Researcher & Community Builder</title>
+  <title>Drian (@xfdrian) — Creative Contributor & Community Manager</title>
   <link rel="canonical" href="https://fdrian.me/">
 
-  <meta property="og:title" content="Drian (@xfdrian) - Cybersecurity Researcher & Community Builder">
+  <meta property="og:title" content="Drian (@xfdrian) — Creative Contributor & Community Manager">
   <meta property="og:description"
-    content="Cybersecurity researcher and community builder focused on bug bounty, vulnerability research, and security education.">
+    content="Creative contributor and community manager. Tools, guides, and notes on bug bounty, vulnerability research, and security education.">
   <meta property="og:image" content="https://fdrian.me/src/images/background.png">
   <meta property="og:url" content="https://fdrian.me/">
   <meta property="og:site_name" content="fdrian.me">
@@ -23,7 +23,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
   <meta name="geo.region" content="BR-AM" />
-  <meta name="geo.placename" content="Manaus" />  
+  <meta name="geo.placename" content="Manaus" />
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
@@ -38,9 +38,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@xfdrian">
   <meta name="twitter:url" content="https://fdrian.me">
-  <meta name="twitter:title" content="Drian (@xfdrian) - Cybersecurity Researcher">
+  <meta name="twitter:title" content="Drian (@xfdrian) — Creative Contributor & Community Manager">
   <meta name="twitter:description"
-    content="Cybersecurity researcher and community builder focused on bug bounty, vulnerability research, and security education.">
+    content="Creative contributor and community manager. Tools, guides, and notes on bug bounty, vulnerability research, and security education.">
   <meta name="twitter:creator" content="@xfdrian">
   <meta name="twitter:image" content="https://fdrian.me/src/images/background.png">
   <meta name="twitter:image:width" content="1024">
@@ -71,7 +71,7 @@
       align-items: center;
       justify-content: center;
       gap: 0.08em;
-      font-family: 'Space Mono', monospace;
+      font-family: 'Fira Code', monospace;
       font-size: clamp(2.8rem, 7vw, 4.6rem);
       line-height: 1.1;
       letter-spacing: 0.14em;
@@ -193,12 +193,12 @@
       "alternateName": "Adriano Freitas",
       "url": "https://fdrian.me",
       "image": "https://fdrian.me/src/images/about.png",
-      "jobTitle": "Cybersecurity Researcher",
+      "jobTitle": "Creative Contributor & Community Manager",
       "worksFor": {
         "@type": "Organization",
         "name": "Pato Academy"
       },
-      "description": "Cybersecurity researcher and community builder focused on bug bounty, vulnerability research, and security education.",
+      "description": "Creative contributor and community manager. Tools, guides, and notes on bug bounty, vulnerability research, and security education.",
       "sameAs": [
         "https://github.com/fdrian",
         "https://linkedin.com/in/fdrian",
@@ -254,6 +254,12 @@
             <a href="https://tools.fdrian.me" rel="noopener">tools.fdrian.me</a>
             <a href="https://guides.fdrian.me" rel="noopener">guides.fdrian.me</a>
           </div>
+          <a class="latest-guide" href="https://guides.fdrian.me/openssl/" rel="noopener" aria-label="Latest guide: OpenSSL">
+            <span class="latest-kicker">new guide</span>
+            <span class="latest-title">OpenSSL</span>
+            <span class="latest-desc">Key generation, certificates, and TLS diagnostics.</span>
+            <span class="latest-arrow" aria-hidden="true">→</span>
+          </a>
           <div class="contact">
             <a href="Mailto:fdrian@proton.me" aria-label="Email">
               <svg class="contactpic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -291,27 +297,31 @@
           <p>Direct access to the tools hub and the command-line guides.</p>
         </div>
         <div class="ecosystem-menus">
-          <nav class="ecosystem-menu" aria-labelledby="tools-menu-title">
+          <nav class="ecosystem-menu ecosystem-menu--chips" aria-labelledby="tools-menu-title">
             <div class="ecosystem-menu-head">
               <span class="ecosystem-menu-kicker">tools</span>
               <h3 id="tools-menu-title">tools.fdrian.me</h3>
             </div>
-            <a href="https://tools.fdrian.me" rel="noopener">tools.fdrian.me</a>
-            <a href="https://tools.fdrian.me/base64/index.html" rel="noopener">base64 debugger</a>
-            <a href="https://tools.fdrian.me/jwt/index.html" rel="noopener">jwt debugger</a>
-            <a href="https://tools.fdrian.me/url/index.html" rel="noopener">url debugger</a>
-            <a href="https://tools.fdrian.me/headers/index.html" rel="noopener">http headers analyzer</a>
-            <a href="https://tools.fdrian.me/js-secrets/index.html" rel="noopener">javascript secrets finder</a>
+            <div class="ecosystem-chips" aria-label="Tool categories">
+              <a class="chip" href="https://tools.fdrian.me/#encoding" rel="noopener">encoding</a>
+              <a class="chip" href="https://tools.fdrian.me/#http" rel="noopener">http</a>
+              <a class="chip" href="https://tools.fdrian.me/#recon" rel="noopener">recon</a>
+            </div>
+            <a class="ecosystem-all" href="https://tools.fdrian.me" rel="noopener">view all tools →</a>
           </nav>
-          <nav class="ecosystem-menu" aria-labelledby="guides-menu-title">
+          <nav class="ecosystem-menu ecosystem-menu--chips" aria-labelledby="guides-menu-title">
             <div class="ecosystem-menu-head">
               <span class="ecosystem-menu-kicker">guides</span>
               <h3 id="guides-menu-title">guides.fdrian.me</h3>
             </div>
-            <a href="https://guides.fdrian.me" rel="noopener">guides.fdrian.me</a>
-            <a href="https://guides.fdrian.me/vim/" rel="noopener">vim guide</a>
-            <a href="https://guides.fdrian.me/tmux/" rel="noopener">tmux guide</a>
-            <a href="https://guides.fdrian.me/git/" rel="noopener">git guide</a>
+            <div class="ecosystem-chips" aria-label="Guide categories">
+              <a class="chip" href="https://guides.fdrian.me/#editor" rel="noopener">editor &amp; terminal</a>
+              <a class="chip" href="https://guides.fdrian.me/#shell" rel="noopener">shell &amp; text</a>
+              <a class="chip" href="https://guides.fdrian.me/#system" rel="noopener">system</a>
+              <a class="chip" href="https://guides.fdrian.me/#security" rel="noopener">security</a>
+              <a class="chip" href="https://guides.fdrian.me/#containers" rel="noopener">containers</a>
+            </div>
+            <a class="ecosystem-all" href="https://guides.fdrian.me" rel="noopener">view all guides →</a>
           </nav>
         </div>
       </div>
