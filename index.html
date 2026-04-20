@@ -327,6 +327,50 @@
       </div>
     </section>
 
+    <section id="support" aria-labelledby="support-title">
+      <div class="support-shell">
+        <div class="support-intro">
+          <span class="support-kicker">support</span>
+          <h2 id="support-title">Like what I do?</h2>
+          <p>If the tools and guides helped you, a small tip keeps them going.</p>
+        </div>
+        <div class="support-options">
+          <article class="support-card" aria-labelledby="support-pix-title">
+            <div class="support-card-head">
+              <span class="support-card-kicker">pix</span>
+              <h3 id="support-pix-title">Brazil · PIX</h3>
+            </div>
+            <div class="support-card-body">
+              <code class="support-key">pix@fdrian.me</code>
+              <button type="button" class="support-copy" data-copy="pix@fdrian.me" aria-label="Copy PIX key">Copy</button>
+            </div>
+          </article>
+
+          <a class="support-card support-card--link" href="https://wise.com/pay/me/adrianof1131?utm_source=request_flow" rel="noopener" target="_blank" aria-labelledby="support-wise-title">
+            <div class="support-card-head">
+              <span class="support-card-kicker">wise</span>
+              <h3 id="support-wise-title">International · Wise</h3>
+            </div>
+            <div class="support-card-body">
+              <code class="support-key">@adrianof1131</code>
+              <span class="support-cta">Open wise.com →</span>
+            </div>
+          </a>
+
+          <a class="support-card support-card--link" href="https://buymeacoffee.com/drian" rel="noopener" target="_blank" aria-labelledby="support-bmc-title">
+            <div class="support-card-head">
+              <span class="support-card-kicker">bmc</span>
+              <h3 id="support-bmc-title">Buy Me a Coffee</h3>
+            </div>
+            <div class="support-card-body">
+              <code class="support-key">buymeacoffee.com/drian</code>
+              <span class="support-cta">Open buymeacoffee.com →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!--terminal-->
     <section id="terminal" aria-labelledby="terminal-title" aria-hidden="true">
       <div class="terminal-card">
@@ -363,16 +407,45 @@
   <script>
     (function () {
       var wordmark = document.querySelector('.logo-wordmark');
-      if (!wordmark) {
-        return;
+      if (wordmark) {
+        wordmark.addEventListener('mouseenter', function () {
+          wordmark.classList.add('is-glitching');
+        });
+
+        wordmark.addEventListener('mouseleave', function () {
+          wordmark.classList.remove('is-glitching');
+        });
       }
 
-      wordmark.addEventListener('mouseenter', function () {
-        wordmark.classList.add('is-glitching');
-      });
-
-      wordmark.addEventListener('mouseleave', function () {
-        wordmark.classList.remove('is-glitching');
+      document.querySelectorAll('.support-copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var text = btn.getAttribute('data-copy');
+          if (!text) return;
+          var done = function () {
+            var original = btn.dataset.originalLabel || btn.textContent;
+            btn.dataset.originalLabel = original;
+            btn.classList.add('is-copied');
+            btn.textContent = 'Copied!';
+            setTimeout(function () {
+              btn.classList.remove('is-copied');
+              btn.textContent = original;
+            }, 1800);
+          };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(done).catch(done);
+          } else {
+            var tmp = document.createElement('textarea');
+            tmp.value = text;
+            tmp.setAttribute('readonly', '');
+            tmp.style.position = 'absolute';
+            tmp.style.left = '-9999px';
+            document.body.appendChild(tmp);
+            tmp.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            document.body.removeChild(tmp);
+            done();
+          }
+        });
       });
     })();
   </script>
