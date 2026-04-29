@@ -9,7 +9,7 @@
   }
 
   var commands = {
-    help: 'Commands: help, about, roles, skills, links, contact, clear',
+    help: 'Commands: help, about, roles, skills, links, tasks, guides, tools, contact, clear',
     about: 'Creative contributor and community manager focused on hacker education and content.',
     roles: 'Creative Contributor @ Critical Thinking Podcast LLC.<br>Community Manager @ Pato Academy.',
     skills: 'Short-form video editing, YouTube thumbnails, community strategy, moderation, analytics.',
@@ -18,6 +18,9 @@
       'LinkedIn: <a href="https://linkedin.com/in/fdrian" target="_blank" rel="noopener">linkedin.com/in/fdrian</a>',
       'Instagram: <a href="https://instagram.com/xfdrian" target="_blank" rel="noopener">instagram.com/xfdrian</a>'
     ].join('<br>'),
+    tasks: 'Tasks: <a href="https://tasks.fdrian.me" target="_blank" rel="noopener">tasks.fdrian.me</a>',
+    guides: 'Guides: <a href="https://guides.fdrian.me" target="_blank" rel="noopener">guides.fdrian.me</a>',
+    tools: 'Tools: <a href="https://tools.fdrian.me" target="_blank" rel="noopener">tools.fdrian.me</a>',
     contact: [
       'Email: <a href="mailto:fdrian@proton.me">fdrian@proton.me</a>'
     ].join('<br>')
