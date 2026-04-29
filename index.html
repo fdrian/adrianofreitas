@@ -166,11 +166,25 @@
     @media all and (max-width: 768px) {
       .header-content .firstline.logo-wordmark {
         gap: 0.04em;
+        font-size: clamp(2.15rem, 11vw, 3.4rem);
         letter-spacing: 0.08em;
       }
 
       .header-content .logo-wordmark .drian-highlight {
         letter-spacing: inherit;
+      }
+    }
+
+    @media all and (max-width: 550px) {
+      .header-content .firstline.logo-wordmark {
+        max-width: calc(100vw - 32px);
+        font-size: clamp(2rem, 12vw, 3rem);
+        letter-spacing: 0.045em;
+      }
+
+      .header-content .secondline {
+        font-size: clamp(0.78rem, 3.4vw, 0.95rem);
+        letter-spacing: 0.05em;
       }
     }
   </style>
@@ -250,9 +264,9 @@
             Creative Contributor &amp; Community Manager
           </div>
           <div class="header-links" aria-label="Site network">
-            <a href="https://tasks.fdrian.me" rel="noopener">tasks.fdrian.me</a>
-            <a href="https://guides.fdrian.me" rel="noopener">guides.fdrian.me</a>
-            <a href="https://tools.fdrian.me" rel="noopener">tools.fdrian.me</a>
+            <a href="https://tasks.fdrian.me" rel="noopener"><span>tasks</span><strong>tasks.fdrian.me</strong></a>
+            <a href="https://guides.fdrian.me" rel="noopener"><span>guides</span><strong>guides.fdrian.me</strong></a>
+            <a href="https://tools.fdrian.me" rel="noopener"><span>tools</span><strong>tools.fdrian.me</strong></a>
           </div>
           <a class="latest-guide" href="https://guides.fdrian.me/openssl/" rel="noopener" aria-label="Latest guide: OpenSSL">
             <span class="latest-kicker">new guide</span>
@@ -301,6 +315,7 @@
             <div class="ecosystem-menu-head">
               <span class="ecosystem-menu-kicker">tasks</span>
               <h3 id="tasks-menu-title">tasks.fdrian.me</h3>
+              <p>Local-first task tracking for private notes, due dates, labels, and progress snapshots.</p>
             </div>
             <div class="ecosystem-chips" aria-label="Task categories">
               <a class="chip" href="https://tasks.fdrian.me" rel="noopener">tasks</a>
@@ -313,6 +328,7 @@
             <div class="ecosystem-menu-head">
               <span class="ecosystem-menu-kicker">guides</span>
               <h3 id="guides-menu-title">guides.fdrian.me</h3>
+              <p>Command-line references for everyday ops, security workflows, and Linux tooling.</p>
             </div>
             <div class="ecosystem-chips" aria-label="Guide categories">
               <a class="chip" href="https://guides.fdrian.me/#editor" rel="noopener">editor &amp; terminal</a>
@@ -327,6 +343,7 @@
             <div class="ecosystem-menu-head">
               <span class="ecosystem-menu-kicker">tools</span>
               <h3 id="tools-menu-title">tools.fdrian.me</h3>
+              <p>Small browser utilities for encoding, HTTP inspection, recon, and workflow shortcuts.</p>
             </div>
             <div class="ecosystem-chips" aria-label="Tool categories">
               <a class="chip" href="https://tools.fdrian.me/#encoding" rel="noopener">encoding</a>
@@ -342,9 +359,9 @@
     <section id="support" aria-labelledby="support-title">
       <div class="support-shell">
         <div class="support-intro">
-          <span class="support-kicker">support</span>
-          <h2 id="support-title">Like what I do?</h2>
-          <p>If the tools and guides helped you, a small tip keeps them going.</p>
+          <span class="support-kicker">support node</span>
+          <h2 id="support-title">Fuel the network</h2>
+          <p>If the tools, tasks, and guides helped you, a small tip keeps them maintained.</p>
         </div>
         <div class="support-options">
           <article class="support-card" aria-labelledby="support-pix-title">
